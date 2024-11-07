@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle, Globe, FileCode, Zap } from "lucide-react"
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      <header className="px-4 lg:px-6 h-14 flex fixed w-full items-center bg-slate-400 hover:bg-opacity-100 bg-opacity-60 ">
         <Link className="flex items-center justify-center" href="#">
           <img src="/pawn.svg" alt="Logo" className="h-7 w-7 md:h-7 md:w-7 lg:h-8 lg:w-8 text-primary" />
           <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold">Pion Blanc</span>
@@ -18,67 +18,68 @@ export default function LandingPage() {
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#pricing">
             Pricing
           </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#catalog">
+            Catalog
+          </Link>
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
             Contact
           </Link>
         </nav>
       </header>
-      <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
+      <main className="flex-1 mt-9">
+        <section className="w-full py-12 md:py-32 lg:py-48 xl:py-56 flex items-center" style={{height: "90vh"}}>
+          <div className="container mx-auto max-w-[1200px] px-4 md:px-6 ">
+          
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Automate Your Invoice Creation
+                  Ajansäästäjä pienyrittäjille
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Transform your web data into professional invoices with our powerful web scraping and invoice generation SaaS.
+                  Automatisoi tarjouspyyntösi hetkessä!
                 </p>
               </div>
               <div className="space-x-4">
                 <Button className="inline-flex h-9 items-center justify-center rounded-md bg-primary text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                  Get Started
+                  Kokeile Nyt
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline">Learn More</Button>
+                <Button variant="outline">Katso Demo</Button>
               </div>
             </div>
           </div>
         </section>
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Features</h2>
-            <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
-              <Card>
-                <CardHeader>
-                  <Globe className="h-8 w-8 mb-2 text-primary" />
-                  <CardTitle>Web Scraping</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  Extract data from any website with our advanced web scraping technology.
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <FileCode className="h-8 w-8 mb-2 text-primary" />
-                  <CardTitle>Invoice Generation</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  Automatically create professional invoices from scraped data.
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Zap className="h-8 w-8 mb-2 text-primary" />
-                  <CardTitle>Fast Processing</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  Generate invoices in seconds, saving you hours of manual work.
-                </CardContent>
-              </Card>
+
+        <section className="h-screen bg-slate-300 mx-auto px-4 sm:px-6 lg:px-8 py-16 ">
+          {/* Left Fixed Column */}
+          <div className="w-1/3 sticky top-1/2 transform -translate-y-1/2">
+            <div className="p-4 bg-gray-100 rounded shadow-md">
+              <h2 className="text-2xl font-bold mb-4">Fixed Content</h2>
+              <p>This content stays fixed as you scroll the right side.</p>
+            </div>
+          </div>
+
+          {/* Right scrolling Column */}
+          <div className="w-2/3 ml-2">
+            <div className="space-y-8">
+              <div className="p-4 bg-white rounded shadow-md">
+                <h3 className="text-xl font-semibold">Scrollable Content 1</h3>
+                <p>Some scrollable content goes here. Add more content as needed.</p>
+              </div>
+              <div className="p-4 bg-white rounded shadow-md">
+                <h3 className="text-xl font-semibold">Scrollable Content 2</h3>
+                <p>More scrollable content goes here. Keep adding content to test scrolling.</p>
+              </div>
+              <div className="p-4 bg-white rounded shadow-md">
+                <h3 className="text-xl font-semibold">Scrollable Content 3</h3>
+                <p>Additional content to scroll. You can add images, text, etc.</p>
+              </div>
+              {/* Add more content sections as needed */}
             </div>
           </div>
         </section>
+        
+        
         <section id="pricing" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Pricing Plans</h2>
