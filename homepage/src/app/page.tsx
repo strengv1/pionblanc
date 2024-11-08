@@ -6,7 +6,6 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 export default function LandingPage() {
   return (
     <div>
-
       <section className="w-full py-12 md:py-32 lg:py-48 xl:py-56 flex items-center" style={{height: "90vh"}}>
         <div className="container mx-auto max-w-[1200px] px-4 md:px-6 ">
         
@@ -30,7 +29,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className="min-h-screen bg-slate-300 mx-auto flex flex-col md:flex-row"> {/*  px-4 sm:px-6 lg:px-8 py-16  */}
+      <section id="demo" className="min-h-screen bg-slate-300 mx-auto flex flex-col md:flex-row"> {/*  px-4 sm:px-6 lg:px-8 py-16  */}
         
         {/* Left Fixed Column */}
         <div className="w-full md:w-1/2 py-4">
