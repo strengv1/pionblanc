@@ -10,7 +10,6 @@ export default function About() {
         </p>
       </div>
       
-
       <div className="w-full flex flex-col items-center md:flex-row md:justify-evenly p-4 lg:p-8 bg-slate-300">
         <Card className="h-60 w-96 md:h-96 md:w-60 my-4 flex justify-center">Jan</Card>
         <Card className="h-60 w-96 md:h-96 md:w-60 my-4 flex justify-center">Lauri</Card>

@@ -1,0 +1,24 @@
+{
+  "HomePage": {
+    "hero_title": "Ajansäästäjä pienyrittäjille!",
+    "hero_desc": "Automatisoi tarjouspyyntösi hetkessä!",
+    "call_to_action": "Kokeile Nyt",
+    "secondary_cta": "Katso Demo"    
+  },
+  "Header": {
+    "demo": "Demo",
+    "prices": "Hinnat",
+    "catalog": "Katalogi",
+    "contact": "Ota yhteyttä",
+    "our_story": "Tarinamme"
+  },
+  "Footer": {
+    "all_rights": "Kaikki oikeudet pidätetään",
+    "terms_of_service": "Palveluehdot",
+    "privacy": "Yksityisyys"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "fi": "Suomi"
+  }
+}

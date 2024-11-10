@@ -1,0 +1,24 @@
+{
+  "HomePage": {
+    "hero_title": "Time-saver for Small Business Owners!",
+    "hero_desc": "Automate your requests for quotes in an instant!",
+    "call_to_action": "Try Now",
+    "secondary_cta": "Watch Demo"
+  },
+  "Header": {
+    "demo": "Demo",
+    "prices": "Pricing",
+    "catalog": "Catalog",
+    "contact": "Contact Us",
+    "our_story": "Our Story"
+  },
+  "Footer": {
+    "all_rights": "All rights reserved",
+    "terms_of_service": "Terms of Service",
+    "privacy": "Privacy"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "fi": "Suomi"
+  }
+}
