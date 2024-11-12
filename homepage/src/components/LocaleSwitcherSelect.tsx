@@ -29,9 +29,15 @@ export default function LocaleSwitcherSelect({
     setUserLocale(locale);
     setIsDropdownOpen(false);
   }
-  // Workaround for disappearing scrollbar when opening Select
-  let scrollbarWidth = (window.innerWidth - document.body.clientWidth) + 'px';
-  const scrollBarIsVisible = (isDropdownOpen && (document.body.clientHeight > window.innerHeight));
+  const [scrollbarWidth, setScrollbarWidth] = useState('');
+  const [scrollBarIsVisible, setScrollBarIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setScrollbarWidth((window.innerWidth - document.body.clientWidth) + 'px');
+      setScrollBarIsVisible(isDropdownOpen && (document.body.clientHeight > window.innerHeight));
+    }
+  }, [isDropdownOpen]);
 
   return (
     <div className="relative"
