@@ -6,9 +6,9 @@ export default function Header() {
   const t = useTranslations('Header');
 
   return (
-    <header className="p-4 lg:px-6 h-14 flex fixed w-full items-center bg-slate-400 opacity-95 z-10 top-0">
+    <header className="p-4 lg:px-6 h-14 flex fixed w-full items-center bg-muted text-foreground shadow-lg opacity-95 z-10 top-0">
       <Link className="flex items-center justify-center" href="/">
-        <img src="/pawn.svg" alt="Logo" className="h-7 w-7 md:h-7 md:w-7 lg:h-8 lg:w-8 text-primary" />
+        <img src="/pawn.svg" alt="Logo" className="h-7 w-7 md:h-7 md:w-7 lg:h-8 lg:w-8" />
         <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold">Pion Blanc</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">

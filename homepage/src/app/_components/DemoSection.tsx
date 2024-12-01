@@ -45,13 +45,14 @@ export default function DemoSection() {
     return () => observer.disconnect(); // Cleanup on unmount
   }, [currentSection]);
 
-  const mobileScrollSectionClass = "flex flex-col gap-2 pt-6 py-12";
+  const mobileSectionClass = "px-7 py-32"
+  const mobileScrollSectionClass = "flex flex-col gap-2 pt-7";
   return (
-    <section id="demo" className="demo-section min-h-screen bg-slate-300 flex">
+    <section id="demo" className="demo-section min-h-screen bg-muted flex">
       {/* Mobile View */}
       <div className="flex flex-col md:hidden">
         {/* Video and Content 1 */}
-        <div className="w-full px-4 py-4">
+        <div className={`${mobileSectionClass}`}>
           <VideoPlayer
             src="/videos/ohjevideo1.mp4"
             controls
@@ -67,7 +68,7 @@ export default function DemoSection() {
         </div>
 
         {/* Video and Content 2 */}
-        <div className="w-full px-4 py-4">
+        <div className={`${mobileSectionClass}`}>
           <VideoPlayer
             src="/videos/ohjevideo2.mp4"
             controls
@@ -83,7 +84,7 @@ export default function DemoSection() {
         </div>
 
         {/* Video and Content 3 */}
-        <div className="w-full px-4 py-4">
+        <div className={`${mobileSectionClass}`}>
         <VideoPlayer
             src="/videos/ohjevideo3.mp4"
             controls

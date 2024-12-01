@@ -55,13 +55,13 @@ export default function LocaleSwitcherSelect({
           {items.map((item) => (
             <SelectItem
               key={item.value}
-              className="flex cursor-default items-center px-3 text-base data-[highlighted]:bg-slate-100"
+              className="flex cursor-default items-center px-3 text-base data-[highlighted]:bg-muted"
               value={item.value}
             >
               <div className="mr-2 w-[1rem]">
                 {item.value === defaultValue}
               </div>
-              <span className="text-slate-900">{item.label}</span>
+              <span className="text-foreground">{item.label}</span>
             </SelectItem>
           ))}
         </SelectContent>

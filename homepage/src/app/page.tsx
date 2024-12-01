@@ -18,11 +18,10 @@ export default function LandingPage() {
 
         {/* Hero Section */}
         <section className="
-            w-full flex items-center justify-center text-center text-balance
-            flex-col gap-8 px-4"
+            w-full flex items-center justify-center text-center text-balance flex-col gap-10"
           style={{ height: "90svh" }}
         >
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
             <h1 className="font-bold tracking-tighter text-5xl lg:text-6xl xl:text-7xl">
               {t("hero_title")}
             </h1>
@@ -30,7 +29,7 @@ export default function LandingPage() {
               {t("hero_desc")}
             </p>
           </div>
-          <div className="space-x-4">
+          <div className="space-x-10">
             <Link href="https://tarjousgeneraattori.vercel.app/" target="_blank">
               <Button className="text-lg p-6 rounded-lg">
                 {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />
@@ -38,7 +37,7 @@ export default function LandingPage() {
             </Link>
             
             <Link href="/#demo">
-              <Button variant="outline">
+              <Button variant="outline" className="hover:bg-primary/5">
                 {t("secondary_cta")}
               </Button>
             </Link>
