@@ -3,7 +3,6 @@
 import "../styles/frontpage.css"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
 import { ArrowRight, CheckCircle } from "lucide-react"
 
 import {useTranslations} from 'next-intl';
@@ -16,30 +15,28 @@ export default function LandingPage() {
   return (
     <div>
       <main className="flex-1 mt-16 mb-9">
-        <section className="w-full py-12 md:py-32 lg:py-48 xl:py-56 flex items-center" style={{height: "90vh"}}>
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6 ">
-          
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  {t("hero_title")}
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  {t("hero_desc")}
-                </p>
-              </div>
-              <div className="space-x-4">
-                <Button className="inline-flex h-9 items-center justify-center rounded-md bg-primary text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                  {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Link href="#demo">
-                  <Button variant="outline" >
-                    {t("secondary_cta")}
-                  </Button>
-                </Link>
-              </div>
-            </div>
+        <section className="
+            w-full flex items-center justify-center text-center text-balance
+            flex-col gap-8 px-4"
+          style={{height: "90svh"}}
+        >
+          <div className="flex flex-col gap-4">
+            <h1 className="font-bold tracking-tighter text-5xl lg:text-6xl xl:text-8xl">
+              {t("hero_title")}
+            </h1>
+            <p className="mx-auto text-lg lg:text-3xl max-w-screen-xl ">
+              {t("hero_desc")}
+            </p>
           </div>
+          <div className="space-x-4">
+            <Button className="text-lg p-6 rounded-lg">
+              {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button variant="outline">
+              {t("secondary_cta")}
+            </Button>
+          </div>
+           
         </section>
         
         {DemoSection()}
