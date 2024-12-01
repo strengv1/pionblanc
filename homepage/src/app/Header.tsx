@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import LocaleSwitcher from "@/components/LocaleSwitcher";
+import LocaleSwitcher from "@/app/_components/LocaleSwitcher";
 
 export default function Header() {
   const t = useTranslations('Header');

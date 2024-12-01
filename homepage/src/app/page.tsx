@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react"
 
 import {useTranslations} from 'next-intl';
 import Link from "next/link"
-import DemoSection from "./components/DemoSection"
-import PricingSection from "./components/PricingSection"
+import DemoSection from "./_components/DemoSection"
+import PricingSection from "./_components/PricingSection"
 
 export default function LandingPage() {
   const t = useTranslations('HomePage');
