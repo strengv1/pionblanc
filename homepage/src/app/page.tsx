@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ArrowRight, CheckCircle } from "lucide-react"
 
 import {useTranslations} from 'next-intl';
-import VideoPlayer from "./components/VideoPlayer";
-import { useEffect, useRef, useState } from "react";
+import Link from "next/link"
+import DemoSection from "./components/DemoSection"
 
 export default function LandingPage() {
   const t = useTranslations('HomePage');
@@ -24,7 +24,7 @@ export default function LandingPage() {
             <h1 className="font-bold tracking-tighter text-5xl lg:text-6xl xl:text-8xl">
               {t("hero_title")}
             </h1>
-            <p className="mx-auto text-lg lg:text-3xl max-w-screen-xl ">
+            <p className="mx-auto text-lg lg:text-3xl max-w-screen-xl">
               {t("hero_desc")}
             </p>
           </div>
@@ -32,14 +32,17 @@ export default function LandingPage() {
             <Button className="text-lg p-6 rounded-lg">
               {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline">
-              {t("secondary_cta")}
-            </Button>
+            <Link href="/#demo">
+              <Button variant="outline">
+                {t("secondary_cta")}
+              </Button>
+            </Link>
+            
           </div>
            
         </section>
         
-        {DemoSection()}
+        <DemoSection />
 
         <section id="pricing" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
@@ -85,117 +88,4 @@ export default function LandingPage() {
       </main>
     </div>
   )
-}
-function DemoSection() {
-  const [activeVideo, setActiveVideo] = useState("");
-  const [animationClass, setAnimationClass] = useState("");
-  // Explicitly define the type for sectionRefs to allow HTMLDivElement or null
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const sectionId = entry.target.getAttribute("data-section-id");
-            setAnimationClass(""); // Trigger fade-out animation
-            setTimeout(() => {
-              switch (sectionId) {
-                case "section-0":
-                  setActiveVideo("");
-                  break;
-                case "section-1":
-                  setActiveVideo("/videos/ohjevideo1.mp4");
-                  break;
-                case "section-2":
-                  setActiveVideo("/videos/ohjevideo2.mp4");
-                  break;
-                case "section-3":
-                  setActiveVideo("/videos/ohjevideo3.mp4");
-                  break;
-                default:
-                  break;
-              }
-              setAnimationClass("show"); // Trigger fade-in animation
-            }, 500); // Match this duration with fade-out animation time
-          }
-        });
-      },
-      {
-        root: null, // Use the viewport as the root
-        threshold: 0.5, // Trigger when 50% of the section is in view
-      }
-    );
-
-    sectionRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref); // Ensure ref is not null
-    });
-
-    return () => {
-      sectionRefs.current.forEach((ref) => {
-        if (ref) observer.unobserve(ref); // Ensure ref is not null
-      });
-    };
-  }, []);
-
-  return (
-    <section id="demo" className="min-h-screen bg-slate-300 mx-auto flex flex-col md:flex-row">
-      {/* Left Fixed Column */}
-      <div className="w-full md:w-1/2 lg:mt-80 lg:-mb-44">
-        <div className={`
-          w-full sm:px-2 md:px-4 lg:px-6 px-2
-          sticky top-1/2 transform -translate-y-1/2
-          demo-subsection ${animationClass}
-        `}>
-          <div className="bg-gray-100 rounded shadow-md">
-          {activeVideo && (
-            <VideoPlayer
-              src={activeVideo}
-              controls
-              autoPlay
-              loop
-              muted
-              className="rounded-md shadow-lg"
-              width="100%"
-              height="100%"
-            />
-          )}
-          </div>
-        </div>
-      </div>
-
-      {/* Right Scrolling Column */}
-      <div className="w-full md:w-1/2 my-8 md:my-16">
-        <div className="flex flex-col">
-          <div ref={(el: any) => (sectionRefs.current[0] = el)}
-            data-section-id="section-0" className="-mt-96">
-            {/* Invisible section for fade-in/-out */}
-          </div>
-          <div
-            ref={(el: any) => (sectionRefs.current[1] = el)}
-            data-section-id="section-1"
-            className="p-4 bg-white rounded shadow-md mb-12 md:mb-[400px] md:mt-[400px]"
-          >
-            <h3 className="text-xl font-semibold">Scrollable Content 1</h3>
-            <p>Some scrollable content goes here. Add more content as needed.</p>
-          </div>
-          <div
-            ref={(el: any) => (sectionRefs.current[2] = el)}
-            data-section-id="section-2"
-            className="p-4 bg-white rounded shadow-md my-12 md:my-96"
-          >
-            <h3 className="text-xl font-semibold">Scrollable Content 2</h3>
-            <p>More scrollable content goes here. Keep adding content to test scrolling.</p>
-          </div>
-          <div
-            ref={(el: any) => (sectionRefs.current[3] = el)}
-            data-section-id="section-3"
-            className="p-4 bg-white rounded shadow-md mt-12 md:mt-96 md:mb-96"
-          >
-            <h3 className="text-xl font-semibold">Scrollable Content 3</h3>
-            <p>Additional content to scroll. You can add images, text, etc.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
 }

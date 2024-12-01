@@ -35,6 +35,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         loop={loop}
         muted={muted}
         style={{ width: "100%", height: "100%" }}
+        className="rounded-xl"
       >
         <source src={src} type={type} />
         Your browser does not support the video tag.
