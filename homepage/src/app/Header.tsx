@@ -12,16 +12,16 @@ export default function Header() {
         <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold">Pion Blanc</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#demo">
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#demo">
           {t("demo")}
         </Link>
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#pricing">
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#pricing">
           {t("prices")}
         </Link>
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#catalog">
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#catalog">
           {t("catalog")}
         </Link>
-        <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
+        <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#contact">
           {t("contact")}
         </Link>
         <Link className="text-sm font-medium hover:underline underline-offset-4" href="/about">

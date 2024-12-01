@@ -14,6 +14,7 @@ export default function About() {
         <Card className="h-60 w-96 md:h-96 md:w-60 my-4 flex justify-center">Jan</Card>
         <Card className="h-60 w-96 md:h-96 md:w-60 my-4 flex justify-center">Lauri</Card>
         <Card className="h-60 w-96 md:h-96 md:w-60 my-4 flex justify-center">Ville</Card>
+        <Card className="h-60 w-96 md:h-96 md:w-60 my-4 flex justify-center">Onni</Card>
       </div>
     </div>
   )
