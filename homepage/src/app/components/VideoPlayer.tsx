@@ -25,7 +25,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 }) => {
   return (
     <div
-      className={`relative ${className}`}
+      className={`relative ${className} pointer-events-none`}
       style={{ width, height }}
     >
       <video

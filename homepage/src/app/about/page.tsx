@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 export default function About() {
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="py-12 md:py-16 lg:py-32  text-left" style={{ minWidth:"80%" }}>
+      <div className="py-20 lg:py-32  text-left" style={{ minWidth:"80%" }}>
         <h1 className="font-bold">Tarinamme</h1>
         <p>
           Olemme firma Espoosta jahuu me halutaa mökki!
