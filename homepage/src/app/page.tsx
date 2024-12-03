@@ -17,7 +17,7 @@ export default function LandingPage() {
       <main className="flex-1 mt-16 mb-9">
 
         {/* Hero Section */}
-        <section className="
+        <section className="hero-section
             w-full flex items-center justify-center text-center text-balance flex-col gap-10"
           style={{ height: "90svh" }}
         >

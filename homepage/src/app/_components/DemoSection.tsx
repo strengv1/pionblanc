@@ -159,9 +159,9 @@ export default function DemoSection() {
         {/* Navigation bubbles */}
         <div>
           <div className="mt-48 lg:mt-96 lg:mb-72 sticky top-1/2 transform -translate-y-1/2 flex flex-col gap-3">
-            <div className={`bg-black w-4 h-4 mx-4 rounded-full`} />
-            <div className={`bg-black w-4 h-4 mx-4 rounded-full`} />
-            <div className={`bg-black w-4 h-4 mx-4 rounded-full`} />
+            <div className={`bg-accent w-4 h-4 mx-4 rounded-full`} />
+            <div className={`bg-accent w-4 h-4 mx-4 rounded-full`} />
+            <div className={`bg-accent w-4 h-4 mx-4 rounded-full`} />
           </div>
         </div>
         
