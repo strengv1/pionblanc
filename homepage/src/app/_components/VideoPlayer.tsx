@@ -25,7 +25,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 }) => {
   return (
     <div
-      className={`relative ${className} pointer-events-none`}
+      className={`relative ${className} md:hover:scale-125 md:hover:translate-x-10 lg:hover:translate-x-20 rounded-xl transition-all`}
       style={{ width, height }}
     >
       <video
@@ -35,7 +35,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         loop={loop}
         muted={muted}
         style={{ width: "100%", height: "100%" }}
-        className="rounded-xl"
+        className="rounded-xl pointer-events-none" 
       >
         <source src={src} type={type} />
         Your browser does not support the video tag.

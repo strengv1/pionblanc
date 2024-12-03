@@ -155,6 +155,16 @@ export default function DemoSection() {
             <p>Additional content to scroll. You can add images, text, etc.</p>
           </div>
         </div>
+
+        {/* Navigation bubbles */}
+        <div>
+          <div className="mt-48 lg:mt-96 lg:mb-72 sticky top-1/2 transform -translate-y-1/2 flex flex-col gap-3">
+            <div className={`bg-black w-4 h-4 mx-4 rounded-full`} />
+            <div className={`bg-black w-4 h-4 mx-4 rounded-full`} />
+            <div className={`bg-black w-4 h-4 mx-4 rounded-full`} />
+          </div>
+        </div>
+        
       </div>
     </section>
   );

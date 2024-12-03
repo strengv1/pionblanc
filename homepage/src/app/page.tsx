@@ -31,13 +31,13 @@ export default function LandingPage() {
           </div>
           <div className="space-x-10">
             <Link href="https://tarjousgeneraattori.vercel.app/" target="_blank">
-              <Button className="text-lg p-6 rounded-lg">
+              <Button variant="default" className="text-lg p-6 rounded-lg "> {/* hover:text-primary hover:bg-primary-foreground */}
                 {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
             
             <Link href="/#demo">
-              <Button variant="outline" className="hover:bg-primary/5">
+              <Button variant="outline" className=""> {/* hover:bg-secondary hover:text-primary-foreground */}
                 {t("secondary_cta")}
               </Button>
             </Link>
