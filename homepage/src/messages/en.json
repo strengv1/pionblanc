@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "hero_title": "Time-saver for Small Business Owners!",
+    "hero_title": "Time-saver for Small Businesses!",
     "hero_desc": "Automate your requests for quotes in an instant!",
     "call_to_action": "Try Now",
     "secondary_cta": "Watch Demo"
@@ -11,6 +11,25 @@
     "catalog": "Catalog",
     "contact": "Contact Us",
     "our_story": "Our Story"
+  },
+  "AdditionalInfoSection": {
+    "title": "We have gathered a wide range of product data from several domestic suppliers",
+    "paragraphStart": "Explore ",
+    "our_catalogue": "our catalogue",
+    "paragraphMiddle": " and check if the product information you are looking for is already available. If something is missing, don't hesitate to contact us – we're just a ",
+    "few_clicks_away": "few clicks away",
+    "paragraphEnd": " and happy to help!"
+  },
+  "QuoteSection": {
+    "from_daniels": "Great job, my guys!"
+  },
+  "DemoSection": {
+    "section_1_title": "Search and Select",
+    "section_1_paragraph": "Find the right products quickly and effortlessly. With our tool, you can browse supplier product catalogs, use filters, and add products directly to a request for quotation – simple and efficient!",
+    "section_2_title": "Manage Your Quotation Template",
+    "section_2_paragraph": "Customize your quotation to perfection. In the 'Create Quotation' view, you can save your and your customer's details easily across multiple templates. Products selected in the previous step are automatically included, and you can edit them line by line.",
+    "section_3_title": "Generate the Final Quotation!",
+    "section_3_paragraph": "The final touch with just one click! The 'Generate Quotation' button combines your selected products and the active template into a ready-to-use Excel file. You can finalize it yourself and export it as a PDF for your customer."
   },
   "Footer": {
     "all_rights": "All rights reserved",

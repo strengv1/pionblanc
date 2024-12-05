@@ -13,3 +13,70 @@ html{
   opacity: 0 !important;
   filter: blur(5px) !important;
 }
+
+.quote-section{
+  position: relative;
+}
+.quote-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  right: -50%;
+  top: 0;
+  transform: rotate(8deg)skew(8deg);
+  background: hsl(var(--secondary));
+  z-index: -1;
+}
+
+.cta-button{
+  background-color: hsl(var(--secondary));
+}
+.cta-button:hover {
+  /* background-color: hsla(109 33% 6% / 0.80); */
+  background-color: hsla(var(--secondary-transparent));
+}
+
+.hero-section{
+  position: relative;
+  overflow-x: clip;
+}
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  right: -50%;
+  top: -50%;
+  transform: rotate(-8deg)skew(-8deg);
+  background: hsl(var(--primary));
+  z-index: -1;
+}
+
+.catalogue-link {
+  background-color: transparent;
+  border-bottom: 2px solid hsl(var(--primary));
+  cursor: pointer;
+  overflow: hidden; /* Ensures the pseudo-element stays inside the button */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.catalogue-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: hsl(var(--primary-transparent));
+  z-index: 0;
+  transition: width 0.4s ease;
+}
+
+.catalogue-link:hover::before {
+  width: 100%;
+}
+.catalogue-link {
+  position: relative;
+  z-index: 1;
+}

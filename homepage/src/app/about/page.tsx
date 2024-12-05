@@ -12,7 +12,7 @@ export default function About() {
         </p>
       </div>
       
-      <div className="w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center bg-muted">
+      <div className="w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center bg-secondary">
         <Card className={`${cardClass}`}>Jan</Card>
         <Card className={`${cardClass}`}>Lauri</Card>
         <Card className={`${cardClass}`}>Ville</Card>

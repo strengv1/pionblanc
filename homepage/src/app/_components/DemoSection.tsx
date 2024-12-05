@@ -1,11 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import VideoPlayer from "./VideoPlayer";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function DemoSection() {
   const [currentSection, setCurrentSection] = useState<string | null>("section-1");
   const [activeVideo, setActiveVideo] = useState("/videos/ohjevideo1.mp4");
   const [animationClass, setAnimationClass] = useState("");
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const t = useTranslations('DemoSection');
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -46,9 +50,14 @@ export default function DemoSection() {
   }, [currentSection]);
 
   const mobileSectionClass = "px-7 py-32"
-  const mobileScrollSectionClass = "flex flex-col gap-2 pt-7";
+  const mobileDivClass = "flex flex-col gap-2 pt-7";
+  const mobileTitleClass = "text-xl font-semibold"
+
+  const desktopDivClass = "flex flex-col justify-center text-balance gap-5";
+  const desktopTitleClass = "text-md lg:text-2xl font-semibold";
+  const desktopParagraphClass = "text-md lg:text-xl";
   return (
-    <section id="demo" className="demo-section min-h-screen bg-muted flex">
+    <section id="demo" className="demo-section min-h-screen flex">
       {/* Mobile View */}
       <div className="flex flex-col md:hidden">
         {/* Video and Content 1 */}
@@ -61,9 +70,9 @@ export default function DemoSection() {
             muted
             className="shadow-md"
           />
-          <div data-section-id="section-1" className={mobileScrollSectionClass}>
-            <h3 className="text-xl font-semibold">Scrollable Content 1</h3>
-            <p>Some scrollable content goes here. Add more content as needed.</p>
+          <div data-section-id="section-1" className={mobileDivClass}>
+            <h3 className={mobileTitleClass}>{t("section_1_title")}</h3>
+            <p>{t("section_1_paragraph")}</p>
           </div>
         </div>
 
@@ -77,9 +86,9 @@ export default function DemoSection() {
             muted
             className="shadow-lg"
           />
-          <div data-section-id="section-2" className={mobileScrollSectionClass}>
-            <h3 className="text-xl font-semibold">Scrollable Content 2</h3>
-            <p>More scrollable content goes here. Keep adding content to test scrolling.</p>
+          <div data-section-id="section-2" className={mobileDivClass}>
+            <h3 className={mobileTitleClass}>{t("section_2_title")}</h3>
+            <p>{t("section_2_paragraph")}</p>
           </div>
         </div>
 
@@ -93,9 +102,9 @@ export default function DemoSection() {
             muted
             className="shadow-lg"
           />
-          <div data-section-id="section-3" className={mobileScrollSectionClass}>
-            <h3 className="text-xl font-semibold">Scrollable Content 3</h3>
-            <p>Additional content to scroll. You can add images, text, etc.</p>
+          <div data-section-id="section-3" className={mobileDivClass}>
+            <h3 className={mobileTitleClass}>{t("section_3_title")}</h3>
+            <p>{t("section_3_paragraph")}</p>
           </div>
         </div>
       </div>
@@ -103,7 +112,7 @@ export default function DemoSection() {
       {/* Desktop View */}
       <div className="hidden md:flex flex-row w-full max-w-screen-2xl mx-auto ">
         {/* Left Fixed Column */}
-        <div className="w-1/2 mt-48 lg:mt-96 lg:-mb-28">
+        <div className="w-1/2 mt-48 lg:mt-72 lg:-mb-28">
           <div className={`px-4 w-full demo-video-container ${animationClass}
             sticky top-1/2 transform -translate-y-1/2
             lg:px-6
@@ -130,38 +139,38 @@ export default function DemoSection() {
         {/* Right Scrolling Column */}
         <div className="scroll-container w-1/2 flex flex-col" >
           <div
-            className="flex flex-col justify-center" data-section-id="section-1"
+            className={desktopDivClass} data-section-id="section-1" id="demo-1"
             ref={(el: any) => (sectionRefs.current[0] = el)}
             style={{ height: "85svh" }}
           >
-            <h3 className="text-xl font-semibold">Scrollable Content 1</h3>
-            <p>Some scrollable content goes here. Add more content as needed.</p>
+            <h3 className={desktopTitleClass}>{t("section_1_title")}</h3>
+            <p className={desktopParagraphClass}>{t("section_1_paragraph")}</p>
           </div>
 
           <div
-            className="flex flex-col justify-center" data-section-id="section-2"
+            className={desktopDivClass} data-section-id="section-2" id="demo-2"
             ref={(el: any) => (sectionRefs.current[1] = el)}
             style={{ height: "85svh" }}
           >
-            <h3 className="text-xl font-semibold">Scrollable Content 2</h3>
-            <p>More scrollable content goes here. Keep adding content to test scrolling.</p>
+            <h3 className={desktopTitleClass}>{t("section_2_title")}</h3>
+            <p className={desktopParagraphClass}>{t("section_2_paragraph")}</p>
           </div>
           <div
-            style={{ height: "85svh" }}
-            className="flex flex-col justify-center" data-section-id="section-3"
+            className={desktopDivClass} data-section-id="section-3" id="demo-3"
             ref={(el: any) => (sectionRefs.current[2] = el)}
+            style={{ height: "85svh" }}
           >
-            <h3 className="text-xl font-semibold">Scrollable Content 3</h3>
-            <p>Additional content to scroll. You can add images, text, etc.</p>
+            <h3 className={desktopTitleClass}>{t("section_3_title")}</h3>
+            <p className={desktopParagraphClass}>{t("section_3_paragraph")}</p>
           </div>
         </div>
 
         {/* Navigation bubbles */}
         <div>
           <div className="mt-48 lg:mt-96 lg:mb-72 sticky top-1/2 transform -translate-y-1/2 flex flex-col gap-3">
-            <div className={`bg-accent w-4 h-4 mx-4 rounded-full`} />
-            <div className={`bg-accent w-4 h-4 mx-4 rounded-full`} />
-            <div className={`bg-accent w-4 h-4 mx-4 rounded-full`} />
+            <Link href="#demo-1" className={`${currentSection==="section-1" ? "bg-primary" : "bg-white"} w-4 h-4 mx-4 rounded-full`} style={{border:"1px solid black"}} />
+            <Link href="#demo-2" className={`${currentSection==="section-2" ? "bg-primary" : "bg-white"}  w-4 h-4 mx-4 rounded-full`} style={{border:"1px solid black"}} />
+            <Link href="#demo-3" className={`${currentSection==="section-3" ? "bg-primary" : "bg-white"}  w-4 h-4 mx-4 rounded-full`} style={{border:"1px solid black"}} />
           </div>
         </div>
         

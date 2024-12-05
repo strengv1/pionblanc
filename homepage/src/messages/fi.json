@@ -12,6 +12,25 @@
     "contact": "Ota yhteyttä",
     "our_story": "Tarinamme"
   },
+  "AdditionalInfoSection": {
+    "title": "Olemme koonneet laajan valikoiman tuotedatoja useilta kotimaisilta toimittajilta",
+    "paragraphStart": "Tutustu ",
+    "our_catalogue": "katalogiimme",
+    "paragraphMiddle": " ja tarkista, löytyykö etsimäsi tuotteiden tiedot jo valmiiksi. Jos jotain puuttuu, ota rohkeasti yhteyttä – autamme mielellämme, ja olemme vain ",
+    "few_clicks_away": "muutaman klikkauksen päässä",
+    "paragraphEnd": "!"
+  },
+  "QuoteSection": {
+    "from_daniels":"Tosi hyvää duunii my guys!"
+  },
+  "DemoSection":{
+    "section_1_title": "Haku ja valinta",
+    "section_1_paragraph": "Löydä oikeat tuotteet nopeasti ja vaivattomasti. Tuotteemme avulla voit selata toimittajien tuotevalikoimaa, käyttää filttereitä ja lisätä tuotteita suoraan tarjouspyyntöön – selkeää ja helppoa!",
+    "section_2_title": "Tarjouspohjan hallinta",
+    "section_2_paragraph": "Mukauta tarjouksesi täydelliseksi. Luo-tarjous näkymässä voit tallentaa omat ja asiakkaasi tiedot helposti eri tarjouspohjiin. Edellisen vaiheen tuotteet siirtyvät automaattisesti mukana, ja niitä voi muokata tuoterivikohtaisesti.",
+    "section_3_title": "Generoi valmis tarjous!",
+    "section_3_paragraph": "Viimeinen silaus yhdellä napin painalluksella! 'Generoi tarjous' nappi kokoaa valitut tuotteet ja aktiivisen tarjouspohjan yhteen, luoden valmiin Excel-tiedoston. Voit viimeistellä sen itse ja tulostaa PDF-muodossa asiakkaalle."
+  },
   "Footer": {
     "all_rights": "Kaikki oikeudet pidätetään",
     "terms_of_service": "Palveluehdot",

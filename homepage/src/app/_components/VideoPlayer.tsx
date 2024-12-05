@@ -25,7 +25,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 }) => {
   return (
     <div
-      className={`relative ${className} md:hover:scale-125 md:hover:translate-x-10 lg:hover:translate-x-20 rounded-xl transition-all`}
+      className={`relative ${className} md:hover:scale-105 rounded-xl transition-all`}
       style={{ width, height }}
     >
       <video
