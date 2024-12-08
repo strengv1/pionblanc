@@ -19,7 +19,7 @@ export default function AdditionalInfoSection() {
             {t("paragraphStart")} 
             <Link href="/catalogue" className="border-b-2 border-primary catalogue-link">{t("our_catalogue")}</Link>
             {t("paragraphMiddle")} 
-            <Link href="/#contact_us" className="border-b-2 border-primary catalogue-link">{t("few_clicks_away")}</Link>
+            <Link href="/contact_us" className="border-b-2 border-primary catalogue-link">{t("few_clicks_away")}</Link>
             {t("paragraphEnd")} 
           </p>
         </div>

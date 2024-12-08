@@ -19,10 +19,10 @@ export default function Header() {
         <Link className={`${linkClassName}`} href="/#pricing">
           {t("prices")}
         </Link>
-        <Link className={`${linkClassName}`} href="/#catalog">
-          {t("catalog")}
+        <Link className={`${linkClassName}`} href="/catalogue">
+          {t("catalogue")}
         </Link>
-        <Link className={`${linkClassName}`} href="/#contact">
+        <Link className={`${linkClassName}`} href="/contact_us">
           {t("contact")}
         </Link>
         <Link className={`${linkClassName}`} href="/about">
