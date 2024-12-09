@@ -13,7 +13,6 @@ export default function QuoteSection() {
         </div>
         <div className="w-full flex flex-col gap-10">
           <h1 className="text-lg lg:text-3xl font-semibold">
-            {/* Meillä on tarvitsemasi tuotedata valmiina! */}
             Daniels
           </h1>
           <p className="text-md lg:text-2xl">

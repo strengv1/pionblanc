@@ -5,42 +5,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* .hero-section {
- background: rgb(0,121,140);
-  background: -moz-radial-gradient(circle, rgba(0,121,140,0.45700286950717783) 0%, rgba(255,255,255,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(0,121,140,0.45700286950717783) 0%, rgba(255,255,255,1) 100%);
-  background: radial-gradient(circle, rgba(0,121,140,0.45700286950717783) 0%, rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00798c",endColorstr="#ffffff",GradientType=1);
-} */
-
-/*
-  Dark / Moss Greens: hsl(121, 37%, 27%) hsl(85, 40%, 56%)
-  Dark charcoal & bright yellow: hsl(210, 33%, 9%) hsl(54, 99%, 54%)
-  Dark blue & light blue: (220, 100%, 21%), (218, 89%, 89%)
-  Baby blue? : (219, 64%, 72%)
-
-
-  "Metallic chic"
-    primary: #3D52A0, hsl(227, 45%, 43%)
-    secondary: #7091E6, hsl(223, 70%, 67%)
-    muted/bg: #8697C4, hsl(224, 34%, 65%)
-    lighter muted: #ADBBDA, hsl(221, 38%, 77%)
-    accent: #EDE8F5, hsl(263, 39%, 94%)
-
-  "Deep Vintage Mood"
-    primary: #244855, hsl, (196, 40%, 24%)
-    secondary: #E64833, hsl(7, 78%, 55%)
-    muted/bg: #874F41, hsl(12, 35%, 39%)
-    lighter muted: #90AEAD, hsl(178, 16%, 62%)
-    accent: #FBE9D0, hsl(35, 84%, 90%)
-
-  "Cool and Collected"
-    primary: #003135
-    secondary: #024950
-    muted/bg: #964734
-    lighter muted: #AFDDE5
-    accent: #0FA4AF
-*/
 
 :root {
   --primary-transparent: 24.6 95% 53.1% / 0.2;

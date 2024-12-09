@@ -1,19 +1,27 @@
-'use client'
+"use client"
 
 import { ChangeEvent, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useToast } from "@/hooks/use-toast"
 import { MailIcon, PhoneCallIcon } from 'lucide-react'
 
 export default function ContactUs() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const { toast } = useToast()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log('Form submitted:', { name, email, message })
+
+    toast({
+      title: "Message Sent",
+      description: "We\'ve received your message and will get back to you soon!",
+    });
+
     setName('')
     setEmail('')
     setMessage('')
