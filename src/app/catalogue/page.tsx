@@ -1,21 +1,25 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
+import Link from "next/link"
 
 const companies = [
-  { name: "Axor", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.axor-design.com/fi/
-  { name: "Damixa", logo: "\/placeholder.svg?height=80&width=80" }, // https://damixa.fi/
-  { name: "Hansgrohe", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.hansgrohe.fi/
-  { name: "Ido", logo: "\/placeholder.svg?height=80&width=80" }, // https://ido.fi
-  { name: "Otsoson", logo: "\/placeholder.svg?height=80&width=80" }, // https://otsoson.com
-  { name: "Rejdesign", logo: "\/placeholder.svg?height=80&width=80" }, // https://rejdesign.fi/
-  { name: "Scandtap", logo: "\/placeholder.svg?height=80&width=80" }, // https://scandtap.com/en/
-  { name: "Smedbo", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.smedbo.fi/
-  { name: "Svedbergs", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.svedbergs.fi/
-  { name: "Tapwell", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.tapwell.fi/
-  { name: "Temal", logo: "\/placeholder.svg?height=80&width=80" }, // https://temal.fi/
-  { name: "Hietakari", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.hietakari.fi/fi/
-  { name: "Haven", logo: "\/placeholder.svg?height=80&width=80" }, // https://haven-system.com/
-  { name: "Vieser", logo: "\/placeholder.svg?height=80&width=80" }, // https://www.vieser.fi/
+  { name: "Axor", logo: "\/axor-logo.svg", url: "https://www.axor-design.com/fi" },
+  { name: "Damixa", logo: "\/damixa-logo.png", url: "https://damixa.fi/"},
+  { name: "Hansgrohe", logo: "\/hansgrohe-logo.png", url: "https://www.hansgrohe.fi" },
+  { name: "Ido", logo: "\/ido-logo.png", url: "https://ido.fi" },
+  { name: "Oras", logo: "\/oras-logo.png", url: "https://www.oras.com/fi/etusivu" },
+  { name: "Otsoson", logo: "\/otsoson-logo.png", url: "https://otsoson.com" },
+  { name: "Rejdesign", logo: "\/rejdesign-logo.png", url: "https://rejdesign.fi/" },
+  { name: "Scandtap", logo: "\/scandtap-logo.png", url: "https://scandtap.com/en/" },
+  { name: "Smedbo", logo: "\/smedbo-logo.png", url: "https://www.smedbo.fi/" },
+  { name: "Svedbergs", logo: "\/svedbergs-logo.webp", url: "https://www.svedbergs.fi/" },
+  { name: "Tapwell", logo: "\/tapwell-logo.png", url: "https://www.tapwell.fi/" },
+  { name: "Temal", logo: "\/temal-logo.svg", url: "https://temal.fi/" },
+  { name: "Haven", logo: "\/haven-logo.png", url: "https://haven-system.com/" },
+  { name: "Vieser", logo: "\/vieser-logo.png", url: "https://www.vieser.fi/" },
+  { name: "INR", logo: "\/inr-logo.png", url: "https://www.inr.fi/" },
+  { name: "Duravit", logo: "\/duravit-logo.png", url: "https://www.duravit.com/" },
+  { name: "Nordhem", logo: "\/nordhem-logo.png", url: "https://nordhem.se/" },
 ]
 
 export default function LogoGrid() {
@@ -25,20 +29,24 @@ export default function LogoGrid() {
       <p className="text-md text-balance text-center mb-16">Näiden yritysten tuotedatat meillä jo on.</p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {companies.map((company, index) => (
-          <Card key={index} className="overflow-hidden">
-            <CardContent className="p-6">
-              <div className="flex flex-col items-center space-y-4">
-                <Image
-                  src={company.logo}
-                  alt={`${company.name} logo`}
-                  width={80}
-                  height={80}
-                  className="rounded-full"
-                />
-                <h2 className="text-lg font-semibold text-center">{company.name}</h2>
-              </div>
-            </CardContent>
-          </Card>
+          <Link href={company.url} target="_blank" rel="noopener noreferrer">
+            <Card key={index} className="overflow-hidden hover:shadow-lg hover:scale-105 transition">
+          
+              <CardContent className="pt-6">
+                <div className="flex flex-col items-center space-y-4">
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    width={150}
+                    height={200}
+                    className="object-contain w-auto h-20 sm:h-24"
+                    loading="lazy"
+                  />
+                  <h2 className="text-lg font-semibold text-center">{company.name}</h2>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>

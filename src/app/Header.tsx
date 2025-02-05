@@ -9,10 +9,10 @@ export default function Header() {
   return (
     <header className="p-4 lg:px-6 h-14 flex fixed w-full items-center bg-secondary text-white shadow-lg opacity-95 z-50 top-0">
       <Link className="flex items-center justify-center" href="/">
-        <img src="/pawn.svg" alt="Logo" className="h-7 w-7 md:h-7 md:w-7 lg:h-8 lg:w-8" />
-        <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold">Pion Blanc</span>
+        <img src="/Group24.svg" alt="Logo" className="h-10 w-40 md:h-10 md:w-48 lg:h-10 lg:w-64" />
+
       </Link>
-      <nav className="ml-auto flex gap-4 sm:gap-6">
+      <nav className="ml-auto flex gap-4 sm:gap-6 items-center justify-center">
         <Link className={`${linkClassName}`} href="/#demo">
           {t("demo")}
         </Link>

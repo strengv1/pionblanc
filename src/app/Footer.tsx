@@ -11,7 +11,7 @@ export default function Footer() {
       bg-border text-muted-foreground"
     >
       <p className="text-xs">
-        © 2024 Pion Blanc Oy. {t("all_rights")}
+        © {new Date().getFullYear()} Pion Blanc Oy. {t("all_rights")}
       </p>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link className="text-xs hover:underline underline-offset-4" href="#">
