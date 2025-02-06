@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
+import { useTranslations } from "next-intl";
 
 const companies = [
   { name: "Axor", logo: "\/axor-logo.svg", url: "https://www.axor-design.com/fi" },
@@ -23,11 +24,23 @@ const companies = [
 ]
 
 export default function LogoGrid() {
+  const t = useTranslations('Catalogue');
+
   return (
-    <div className="container mx-auto mt-24 pb-12 flex-1">
-      <h1 className="text-3xl font-bold text-center mb-8">Katalogi</h1>
-      <p className="text-md text-balance text-center mb-16">Näiden yritysten tuotedatat meillä jo on.</p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="w-full flex flex-1 flex-col items-center my-24">
+      <div className="max-w-screen-xl py-20 lg:py-32 text-left mx-5 md:mx-20 lg:mx-40
+                      flex flex-col gap-4">
+        <h1 className="text-3xl font-bold">{t("catalogue")}</h1>
+
+        <p className="text-xl font-semibold text-balance text-left">{t("main_text_bold")}</p>
+        <p className="text-xl font-normal text-balance text-left mb-16">
+          {t("main_text_normal_start")} 
+          <Link href="/contact_us" className="border-b-2 border-primary catalogue-link">{t("let_us_know_your_needs")}</Link>
+          {t("main_text_normal_end")} 
+        </p>
+      </div>
+      
+      <div className="grid mx-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {companies.map((company, index) => (
           <Link href={company.url} target="_blank" rel="noopener noreferrer">
             <Card key={index} className="overflow-hidden hover:shadow-lg hover:scale-105 transition">
