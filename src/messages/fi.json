@@ -1,9 +1,14 @@
 {
   "HomePage": {
-    "hero_title": "Ajansäästäjä pienyrittäjille!",
-    "hero_desc": "Automatisoi tarjouspyyntösi hetkessä!",
+    "hero_title": "Räätälöity tarjousgeneraattori pienyrityksille!",
+    "hero_desc": "Unohda manuaaliset Excel-tarjoukset ja käytä aikaasi paremmin – me teemme tarjousprosessistasi nopean ja helpon, jotta voit keskittyä ",
+    "rotating_word_1": "liiketoimintasi kasvuun",
+    "rotating_word_2": "vapaa-aikaan ja rentoutumiseen",
+    "rotating_word_3": "tärkeämpiin projekteihisi",
+    "rotating_word_4": "asiakassuhteiden kehittämiseen",
+    "rotating_word_5": "tiimisi hyvinvointiin",
     "call_to_action": "Kokeile Nyt",
-    "secondary_cta": "Katso Demo"    
+    "secondary_cta": "Katso Demo"
   },
   "Header": {
     "demo": "Demo",
@@ -39,5 +44,21 @@
   "LocaleSwitcher": {
     "en": "English",
     "fi": "Suomi"
+  },
+  "Catalogue": {
+    "catalogue": "Katalogi",
+    "main_text_bold": "Olemme jo keränneet näiden yritysten tiedot.",
+    "main_text_normal_start": "Etkö löytänyt etsimääsi? ",
+    "let_us_know_your_needs": "Kerro meille tarpeesi",
+    "main_text_normal_end": ", niin selvitämme, voimmeko hankkia sen sinulle. Ilmoitamme myös mahdolliset kustannukset, jotta voit tehdä harkitun päätöksen."
+  },
+  "OurStory":{
+    "title":"Pion Blanc - Keitä me olemme?",
+    "paragraph1": "Pion Blanc on suomalainen ohjelmistoyritys, joka keskittyy helppokäyttöisiin ja tehokkaisiin digitaalisiin ratkaisuihin pienyrityksille. Olemme helposti lähestyttäviä, nuoria diplomi-insinöörejä sekä intohimoisia kehittäjiä, jotka jakavat yhteisen taustan – ystävystyimme jo opintojemme alkuvaiheessa Aalto-yliopistossa.",
+    "paragraph2": "Yrityksemme sai alkunsa, kun huomasimme selkeän tarpeen räätälöidylle ohjelmistolle, joka helpottaisi pienyritysten tarjousprosessia – erityisesti niitä, jotka tekevät tarjouksensa edelleen manuaalisesti käyttäen Exceliä.",
+    "paragraph3": "Tällä hetkellä palvelumme kattaa noin 20 kylpyhuonesisustuksen toimittajaa, ja sen avulla yritykset voivat löytää ja käyttää tuotetietoja huomattavasti nopeammin.",
+    "paragraph4": "Olemme kuitenkin paljon enemmän kuin vain tarjousgeneraattorin kehittäjiä. Toisin kuin suuret ohjelmistotalot, joiden tuotteet on suunniteltu kattamaan mahdollisimman laaja asiakaskunta, me keskitymme räätälöityihin, juuri sinun tarpeisiisi suunniteltuihin ratkaisuihin – ja vieläpä edullisemmin. Pienenä ja ketteränä tiiminä pystymme tarjoamaan nopeaa ja joustavaa kehitystyötä ilman ylimääräisiä kustannuksia.",
+    "paragraph5": "Web-teknologiat ovat erikoisalaamme, ja autamme asiakkaitamme mielellämme myös uusissa ohjelmistoprojekteissa ja verkkosivuratkaisuissa. Jos sinulla on idea tai tarve digitaaliselle työkalulle, keskustelemme siitä mielellämme!"
   }
+
 }

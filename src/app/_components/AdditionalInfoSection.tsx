@@ -24,7 +24,7 @@ export default function AdditionalInfoSection() {
           </p>
         </div>
         <div className="w-full items-center justify-center text-center">
-          <img src="/kettu_front.webp" alt="kettu" className="h-[400px] mx-auto"></img>
+          <img src="/working_on_laptop_illustration.png" alt="kettu" className="h-[400px] mx-auto"></img>
         </div>
       </div>
     </section>
