@@ -49,16 +49,18 @@ const DynamicText = () => {
   }, [words]);
 
   return (
-    <span className="relative inline-block min-w-[331px] lg:min-w-[397px] text-left"> {/* Adjust min-w to the longest word */}
+    <span className="relative inline-flex justify-center min-w-[331px] lg:min-w-[397px]">
       <span
         ref={textRef}
-        className={`text-xl lg:text-2xl font-bold transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
+        className={`font-bold transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
       >
         {currentWord}
       </span>
       <span
-        className="text-xl lg:text-2xl absolute left-0 font-bold transition-transform duration-500"
-        style={{ transform: `translateX(${wordWidth}px)` }} // Adjust margin
+        className="absolute font-bold transition-transform duration-500"
+        style={{
+          transform: `translateX(${(wordWidth / 2) + 3}px)`,
+        }}
       >
         .
       </span>
@@ -79,7 +81,7 @@ export default function HeroSection() {
         <h1 className="font-bold tracking-tighter text-4xl lg:text-5xl xl:text-6xl mx-4">
           {t("hero_title")}
         </h1>
-        <p className="text-lg lg:text-xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
+        <p className="text-xl lg:text-2xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
           {t("hero_desc")}
           <span className="inline-block min-w-[50%] text-center">
             <DynamicText />
