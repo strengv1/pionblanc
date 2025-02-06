@@ -4,7 +4,7 @@ import "../styles/frontpage.css"
 import AdditionalInfoSection from "./_components/AdditionalInfoSection"
 import DemoSection from "./_components/DemoSection"
 import HeroSection from "./_components/HeroSection"
-import PricingSection from "./_components/PricingSection"
+// import PricingSection from "./_components/PricingSection"
 import QuoteSection from "./_components/QuoteSection"
 
 export default function LandingPage() {
@@ -20,7 +20,7 @@ export default function LandingPage() {
         </div>
         <DemoSection />
 
-        <PricingSection />
+        {/* <PricingSection /> */}
       </main>
     </div>
   )
