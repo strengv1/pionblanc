@@ -79,8 +79,11 @@ export default function HeroSection() {
         <h1 className="font-bold tracking-tighter text-4xl lg:text-5xl xl:text-6xl mx-4">
           {t("hero_title")}
         </h1>
-        <p className="text-lg lg:text-xl max-w-screen-md mx-4 md:mx-auto">
-          {t("hero_desc")} <DynamicText />
+        <p className="text-lg lg:text-xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
+          {t("hero_desc")}
+          <span className="inline-block min-w-[50%] text-center">
+            <DynamicText />
+          </span>
         </p>
 
       </div>
