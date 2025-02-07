@@ -67,7 +67,7 @@ export default function About() {
             </div>
             <CardContent className="flex-1 flex flex-col justify-center px-4">
               <h2 className="text-lg font-semibold">{member.name}</h2>
-              <p className="text-sm text-gray-600 italic">"{member.quote}"</p>
+              <p className="text-sm text-gray-600 italic">&quot;{member.quote}&quot;</p>
             </CardContent>
           </Card>
         ))}

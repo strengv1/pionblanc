@@ -1,12 +1,7 @@
 {
   "HomePage": {
-    "hero_title": "Räätälöity tarjousgeneraattori pienyrityksille!",
-    "hero_desc": "Unohda manuaaliset Excel-tarjoukset ja käytä aikaasi paremmin – me teemme tarjousprosessistasi nopean ja helpon, jotta voit keskittyä ",
-    "rotating_word_1": "liiketoimintasi kasvuun",
-    "rotating_word_2": "vapaa-aikaan ja rentoutumiseen",
-    "rotating_word_3": "tärkeämpiin projekteihisi",
-    "rotating_word_4": "asiakassuhteiden kehittämiseen",
-    "rotating_word_5": "tiimisi hyvinvointiin",
+    "hero_title": "Ajansäästäjä pienyrityksille!",
+    "hero_desc": "Unohda manuaaliset tarjouspohjat – automatisoi tarjousprosessisi helposti ja tehokkaasti juuri sinun tarpeisiisi räätälöidyllä generaattorilla.",
     "call_to_action": "Kokeile Nyt",
     "secondary_cta": "Katso Demo"
   },
@@ -21,9 +16,16 @@
     "title": "Olemme koonneet laajan valikoiman tuotedatoja useilta toimittajilta",
     "paragraphStart": "Tutustu ",
     "our_catalogue": "katalogiimme",
-    "paragraphMiddle": " ja tarkista, löytyykö etsimäsi tuotteiden tiedot jo valmiiksi. Jos jotain puuttuu, ota rohkeasti yhteyttä – autamme mielellämme, ja olemme vain ",
+    "paragraphMiddle": " ja tarkista, löytyykö etsimäsi tuotteiden tiedot jo valmiiksi. Jos jotain puuttuu, ota rohkeasti yhteyttä – autamme mielellämme. Olemme vain ",
     "few_clicks_away": "muutaman klikkauksen päässä",
-    "paragraphEnd": "!"
+    "paragraphEnd": "!",
+    "additionalTitle":"Jos teet laskusi edelleen manuaalisesti Excelillä, olet aikaasi jäljessä",
+    "additionalSubtext":"Keskity olennaiseen – me nopeutamme tarjousprosessiasi, jotta voit panostaa",
+    "rotating_word_1": "liiketoimintasi kasvuun",
+    "rotating_word_2": "vapaa-aikaan ja rentoutumiseen",
+    "rotating_word_3": "tärkeämpiin projekteihisi",
+    "rotating_word_4": "asiakassuhteiden kehittämiseen",
+    "rotating_word_5": "tiimisi hyvinvointiin"
   },
   "QuoteSection": {
     "from_daniels":"Tosi hyvää duunii my guys!"

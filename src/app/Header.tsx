@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import LocaleSwitcher from "@/app/_components/LocaleSwitcher";
+import Image from "next/image";
 
 export default function Header() {
   const t = useTranslations('Header');
@@ -9,7 +10,14 @@ export default function Header() {
   return (
     <header className="p-4 lg:px-6 h-20 flex fixed w-full items-center bg-secondary text-white shadow-lg opacity-95 z-50 top-0">
       <Link className="flex items-center justify-center" href="/">
-        <img src="/Group24.svg" alt="Logo" className="h-10 w-40 md:h-10 md:w-48 lg:h-14 lg:w-64" />
+      <div className="relative h-10 w-40 md:h-10 md:w-48 lg:h-14 lg:w-64">
+        <Image
+          src="/Group24.svg"
+          alt="Logo"
+          fill
+          className="object-contain"
+        />
+      </div>
 
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center justify-center">

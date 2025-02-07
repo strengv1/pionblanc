@@ -1,12 +1,7 @@
 {
   "HomePage": {
-    "hero_title": "A Custom Offer Generator for Small Businesses!",
-    "hero_desc": "Forget manual Excel offers and use your time more efficiently – we make your quoting process fast and easy so you can focus on ",
-    "rotating_word_1": "growing your business",
-    "rotating_word_2": "your free time and relaxation",
-    "rotating_word_3": "your most important projects",
-    "rotating_word_4": "developing customer relationships",
-    "rotating_word_5": "your team's well-being",
+    "hero_title": "Time-Saver for Small Businesses!",
+    "hero_desc": "Forget manual quote templates – automate your quoting process easily and efficiently with a generator tailored directly to your needs.",
     "call_to_action": "Try Now",
     "secondary_cta": "Watch Demo"
   },
@@ -23,7 +18,14 @@
     "our_catalogue": "our catalogue",
     "paragraphMiddle": " and check if the product information you are looking for is already available. If something is missing, don't hesitate to contact us – we're just a ",
     "few_clicks_away": "few clicks away",
-    "paragraphEnd": " and happy to help!"
+    "paragraphEnd": " and happy to help!",
+    "additionalTitle": "If you're still creating your offers manually with Excel, you're missing out",
+    "additionalSubtext": "Focus on what matters – we streamline your quoting process so you can invest in",
+    "rotating_word_1": "growing your business",
+    "rotating_word_2": "your free time and relaxation",
+    "rotating_word_3": "your most important projects",
+    "rotating_word_4": "developing customer relationships",
+    "rotating_word_5": "your team's well-being"
   },
   "QuoteSection": {
     "from_daniels": "Great job, my guys!"

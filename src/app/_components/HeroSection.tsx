@@ -7,67 +7,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 
-const DynamicText = () => {
-  const t = useTranslations('HomePage');
-
-  const words = [
-    t("rotating_word_1"),
-    t("rotating_word_2"),
-    t("rotating_word_3"),
-    t("rotating_word_4"),
-    t("rotating_word_5")
-  ];
-  const [currentWord, setCurrentWord] = useState(words[0]);
-  const [fade, setFade] = useState(true);
-  const textRef = useRef<HTMLSpanElement>(null);
-  const [wordWidth, setWordWidth] = useState(0);
-
-  useEffect(() => {
-    // Function to update the width of the word
-    const updateWidth = () => {
-      if (textRef.current) {
-        setWordWidth(textRef.current.offsetWidth);
-      }
-    };
-
-    updateWidth(); // Initial measurement
-
-    const interval = setInterval(() => {
-      setFade(false); // Start fade out
-      setTimeout(() => {
-        setCurrentWord((prevWord) => {
-          const currentIndex = words.indexOf(prevWord);
-          const nextIndex = (currentIndex + 1) % words.length;
-          return words[nextIndex];
-        });
-        setFade(true); // Start fade in
-        updateWidth(); // Update width when word changes
-      }, 500); // Wait for the fade out to complete before changing the word
-    }, 3000); // Change word every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [words]);
-
-  return (
-    <span className="relative inline-flex justify-center min-w-[331px] lg:min-w-[397px]">
-      <span
-        ref={textRef}
-        className={`font-bold transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
-      >
-        {currentWord}
-      </span>
-      <span
-        className="absolute font-bold transition-transform duration-500"
-        style={{
-          transform: `translateX(${(wordWidth / 2) + 3}px)`,
-        }}
-      >
-        .
-      </span>
-    </span>
-  );
-};
-
 
 export default function HeroSection() {
   const t = useTranslations('HomePage');
@@ -83,9 +22,6 @@ export default function HeroSection() {
         </h1>
         <p className="text-xl lg:text-2xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
           {t("hero_desc")}
-          <span className="inline-block min-w-[50%] text-center">
-            <DynamicText />
-          </span>
         </p>
 
       </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -19,7 +19,7 @@ export default function ContactUs() {
 
     toast({
       title: "Message Sent",
-      description: "We\'ve received your message and will get back to you soon!",
+      description: "We've received your message and will get back to you soon!",
     });
 
     setName('')

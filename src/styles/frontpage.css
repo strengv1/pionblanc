@@ -25,7 +25,7 @@ html{
   right: -50%;
   top: 0;
   transform: rotate(8deg)skew(8deg);
-  background: hsl(var(--secondary));
+  background: hsl(var(--primary));
   z-index: -1;
 }
 
