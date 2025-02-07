@@ -4,9 +4,6 @@ import { useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-
-
 
 export default function HeroSection() {
   const t = useTranslations('HomePage');

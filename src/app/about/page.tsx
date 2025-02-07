@@ -14,7 +14,7 @@ export default function About() {
     {
       name: "Lauri",
       quote: "Olisinpa mä enemmän Villen kaltainen.", // Code, coffee, and creativity
-      image: "/lauri.jpg"
+      image: "/lauri.png"
     },
     {
       name: "Ville",
@@ -23,7 +23,7 @@ export default function About() {
     },
     {
       name: "Onni",
-      quote: "Villel on iso muna.", // Solving problems one line at a time
+      quote: "Jos kaikki olisi kuin Ville, niin maailma olisi parempi paikka.", // Solving problems one line at a time
       image: "/onni.jpg"
     }
   ]
@@ -50,7 +50,7 @@ export default function About() {
         <p className={paragraphClass}>
           {t("paragraph5")}
         </p>
-        
+
       </div>
       
       <div className="w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center bg-secondary gap-6">

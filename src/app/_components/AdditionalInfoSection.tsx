@@ -1,3 +1,4 @@
+"use client"
 
 import "../../styles/frontpage.css"
 import { useTranslations } from 'next-intl';
@@ -8,7 +9,7 @@ import { useEffect, useRef, useState } from "react";
 const DynamicText = () => {
   const t = useTranslations('AdditionalInfoSection');
 
-  const words = [
+  const words = [  // eslint-disable-line react-hooks/exhaustive-deps
     t("rotating_word_1"),
     t("rotating_word_2"),
     t("rotating_word_3"),
@@ -103,7 +104,7 @@ export default function AdditionalInfoSection() {
         <div className="w-full relative h-[280px] md:h-[350px] lg:h-[400px] flex items-center justify-center text-center">
           <Image
             src="/tuotedataa.png"
-            alt="working_on_laptop_illustration"
+            alt=""
             className="object-contain"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
