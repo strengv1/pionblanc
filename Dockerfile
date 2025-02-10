@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY package.json package-lock.json ./
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Copy the rest of the application files
 COPY . .
@@ -14,13 +14,16 @@ COPY . .
 # Build the Next.js app
 RUN npm run build
 
-# Stage 2: Set up Nginx and serve the built app
+# Stage 2: Serve with Nginx
 FROM nginx:alpine
 
-# Copy the built app from the build stage
-COPY --from=build /app/out /usr/share/nginx/html
+# Copy the built Next.js app from the previous stage
+COPY --from=build /app/.next /usr/share/nginx/html
 
-# Copy the custom Nginx config file
+# Copy static assets (optional, if you have a public folder)
+COPY --from=build /app/public /usr/share/nginx/html/public
+
+# Copy the custom Nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose port 80
