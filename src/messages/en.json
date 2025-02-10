@@ -31,6 +31,7 @@
     "from_daniels": "Great job, my guys!"
   },
   "DemoSection": {
+    "title": "How does this work?",
     "section_1_title": "Search and Select",
     "section_1_paragraph": "Find the right products quickly and effortlessly. With our tool, you can browse supplier product catalogs, use filters, and add products directly to a request for quotation – simple and efficient!",
     "section_2_title": "Manage Your Quotation Template",
@@ -65,6 +66,10 @@
   "ContactUs":{
     "title":"Contact us – we're here to help!",
     "paragraph": "Feel free to reach out, no strings attached! You can call or email us—we are easy to reach. It's important to us that you get a solution tailored to your needs, and we're happy to discuss how we can support your business."
+  },
+  "FinalHookSection": {
+    "title": "Interested?",
+    "button": "Contact us!"
   },
   "Privacy": {
     "title": "Privacy",

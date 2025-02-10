@@ -31,6 +31,7 @@
     "from_daniels":"Tosi hyvää duunii my guys!"
   },
   "DemoSection":{
+    "title": "Miten tämä kaikki toimii?",
     "section_1_title": "Haku ja valinta",
     "section_1_paragraph": "Löydä oikeat tuotteet nopeasti ja vaivattomasti. Tuotteemme avulla voit selata toimittajien tuotevalikoimaa, käyttää filttereitä ja lisätä tuotteita suoraan tarjouspyyntöön – selkeää ja helppoa!",
     "section_2_title": "Tarjouspohjan hallinta",
@@ -65,6 +66,10 @@
   "ContactUs":{
     "title":"Ota yhteyttä – olemme täällä auttamassa!",
     "paragraph": "Yhteydenotto ei maksa mitään! Voit soittaa tai lähettää sähköpostia, olemme nopeasti tavoitettavissa. Meille on tärkeää, että saat juuri sinun tarpeisiisi räätälöidyn ratkaisun, ja keskustelemme mielellämme, miten voimme tukea liiketoimintaasi."
+  },
+  "FinalHookSection": {
+    "title": "Kiinnostuitko?",
+    "button": "Ota yhteyttä!"
   },
   "Privacy": {
     "title": "Yksityisyys",

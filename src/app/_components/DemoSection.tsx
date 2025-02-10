@@ -64,7 +64,7 @@ export default function DemoSection() {
     <section id="demo" className="demo-section min-h-screen pt-36 lg:pt-40">
       <div className="text-center -mb-20">
         <h1 className="text-xl lg:text-3xl font-semibold">
-          Miten tämä kaikki toimii?
+          {t("title")}
         </h1>
       </div>
       <div className="flex">
