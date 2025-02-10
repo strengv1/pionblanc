@@ -22,26 +22,25 @@ const DynamicText = () => {
   const [wordWidth, setWordWidth] = useState(0);
 
   useEffect(() => {
-    // Function to update the width of the word
     const updateWidth = () => {
       if (textRef.current) {
         setWordWidth(textRef.current.offsetWidth);
       }
     };
 
-    updateWidth(); // Initial measurement
+    updateWidth();
 
     const interval = setInterval(() => {
-      setFade(false); // Start fade out
+      setFade(false);
       setTimeout(() => {
         setCurrentWord((prevWord) => {
           const currentIndex = words.indexOf(prevWord);
           const nextIndex = (currentIndex + 1) % words.length;
           return words[nextIndex];
         });
-        setFade(true); // Start fade in
-        updateWidth(); // Update width when word changes
-      }, 500); // Wait for the fade out to complete before changing the word
+        setFade(true);
+        updateWidth();
+      }, 500);
     }, 3000); // Change word every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on unmount

@@ -61,6 +61,14 @@
     "paragraph3": "Tällä hetkellä palvelumme kattaa noin 20 kylpyhuonesisustuksen toimittajaa, ja sen avulla yritykset voivat löytää ja käyttää tuotetietoja huomattavasti nopeammin.",
     "paragraph4": "Olemme kuitenkin paljon enemmän kuin vain tarjousgeneraattorin kehittäjiä. Toisin kuin suuret ohjelmistotalot, joiden tuotteet on suunniteltu kattamaan mahdollisimman laaja asiakaskunta, me keskitymme räätälöityihin, juuri sinun tarpeisiisi suunniteltuihin ratkaisuihin – ja vieläpä edullisemmin. Pienenä ja ketteränä tiiminä pystymme tarjoamaan nopeaa ja joustavaa kehitystyötä ilman ylimääräisiä kustannuksia.",
     "paragraph5": "Web-teknologiat ovat erikoisalaamme, ja autamme asiakkaitamme mielellämme myös uusissa ohjelmistoprojekteissa ja verkkosivuratkaisuissa. Jos sinulla on idea tai tarve digitaaliselle työkalulle, keskustelemme siitä mielellämme!"
+  },
+  "ContactUs":{
+    "title":"Ota yhteyttä – olemme täällä auttamassa!",
+    "paragraph": "Yhteydenotto ei maksa mitään! Voit soittaa tai lähettää sähköpostia, olemme nopeasti tavoitettavissa. Meille on tärkeää, että saat juuri sinun tarpeisiisi räätälöidyn ratkaisun, ja keskustelemme mielellämme, miten voimme tukea liiketoimintaasi."
+  },
+  "Privacy": {
+    "title": "Yksityisyys",
+    "paragraph": "Emme kerää mitään henkilötietoja tämän verkkosivuston kautta. Ohjelmistomme käsittelee dataa yksilöllisten sopimusten mukaisesti asiakkaidemme kanssa."
   }
 
 }

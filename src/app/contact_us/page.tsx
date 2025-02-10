@@ -1,17 +1,22 @@
 import { MailIcon, PhoneCallIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
+import { useTranslations } from "next-intl";
 
 export default function ContactUs() {
+  const t = useTranslations('ContactUs');
+
   const cardClasses = "flex justify-around mt-12 py-4 px-5"
   const commonDivClasses ="flex flex-col gap-3 md:text-md lg:text-lg text-left text-balance justify-center"
   const imageClasses = "rounded-full object-contain my-6"
   return (
     <div className="max-w-screen-md w-full mx-auto my-24 px-4 flex-1">
       <div className="py-20 lg:py-32 text-left">
-        <h1 className="text-3xl font-bold my-4">Ota yhteyttä – olemme täällä auttamassa!</h1>
+        <h1 className="text-3xl font-bold my-4">
+          {t("title")}
+        </h1>
         <p className="md:text-md lg:text-lg text-left text-balance">
-          Yhteydenotto ei maksa mitään! Voit soittaa tai lähettää sähköpostia, olemme nopeasti tavoitettavissa. Meille on tärkeää, että saat juuri sinun tarpeisiisi räätälöidyn ratkaisun, ja keskustelemme mielellämme, miten voimme tukea liiketoimintaasi.
+          {t("paragraph")}
         </p>
         
         <Card className={cardClasses}>

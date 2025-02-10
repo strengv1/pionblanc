@@ -14,10 +14,10 @@ export default function Footer() {
         © {new Date().getFullYear()} Pion Blanc Oy. {t("all_rights")}
       </p>
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-        <Link className="text-xs hover:underline underline-offset-4" href="#">
+        {/* <Link className="text-xs hover:underline underline-offset-4" href="#">
           {t("terms_of_service")}
-        </Link>
-        <Link className="text-xs hover:underline underline-offset-4" href="#">
+        </Link> */}
+        <Link className="text-xs hover:underline underline-offset-4" href="/privacy">
           {t("privacy")}
         </Link>
       </nav>
