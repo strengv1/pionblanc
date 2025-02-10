@@ -1,20 +1,23 @@
-# Use the official Node.js image as the base image
+# Use an official Node.js runtime as a parent image
 FROM node:18-alpine
 
-# Set working directory inside the container
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json (or yarn.lock) to the container
+# Copy the package.json and package-lock.json files
 COPY package*.json ./
 
-# Install the project dependencies inside the container
-RUN npm install --legacy-peer-deps
+# Install dependencies (including Next.js)
+RUN npm install
 
-# Copy the rest of the application code to the container
+# Copy the rest of the application code
 COPY . .
 
-# Expose port 3000 for the app (Next.js default port)
+# Build the Next.js app for production
+RUN npm run build
+
+# Expose the port your app will run on
 EXPOSE 3000
 
-# Command to start the Next.js application (production mode by default)
+# Run the Next.js app in production mode
 CMD ["npm", "run", "start"]
