@@ -1,17 +1,7 @@
+version: '3'
 services:
   app:
     build: .
     ports:
-      - "80:80"
-      - "443:443"  # Expose port 443 for HTTPS
-    environment:
-      - NODE_ENV=production
+      - "3000:3000"
     restart: always
-    volumes:
-      - /etc/letsencrypt:/etc/letsencrypt:ro  # Mount Let's Encrypt certificates into the container
-    networks:
-      - web
-
-networks:
-  web:
-    driver: bridge
