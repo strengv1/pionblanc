@@ -20,11 +20,6 @@ export default function About() {
       name: "Ville",
       quote: "Turning ideas into reality.",
       image: "/ville.jpg"
-    },
-    {
-      name: "Onni",
-      quote: "Jos kaikki olisi kuin Ville, niin maailma olisi parempi paikka.", // Solving problems one line at a time
-      image: "/onni.jpg"
     }
   ]
 
@@ -53,9 +48,9 @@ export default function About() {
 
       </div>
       
-      <div className="w-full p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center bg-secondary gap-6">
+      <div className="w-full p-5 grid grid-cols-1 md:grid-cols-3 justify-items-center bg-secondary gap-6">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="w-96 md:w-72 lg:w-60 h-80 flex flex-col items-center text-center bg-white shadow-lg rounded-lg">
+          <Card key={index} className="w-96 md:w-64 lg:w-80 h-80 flex flex-col items-center text-secondary text-center bg-white shadow-lg rounded-lg border-black">
             <div className="w-full h-48 flex items-center justify-center overflow-hidden">
               <Image
                 src={member.image}
@@ -67,7 +62,7 @@ export default function About() {
             </div>
             <CardContent className="flex-1 flex flex-col justify-center px-4">
               <h2 className="text-lg font-semibold">{member.name}</h2>
-              <p className="text-sm text-gray-600 italic">&quot;{member.quote}&quot;</p>
+              <p className="text-sm text-gray-700 italic">&quot;{member.quote}&quot;</p>
             </CardContent>
           </Card>
         ))}

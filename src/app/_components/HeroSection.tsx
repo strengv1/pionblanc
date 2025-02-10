@@ -23,7 +23,7 @@ export default function HeroSection() {
 
       </div>
       <div className="space-x-10 z-10">
-        <Link href="" target="_blank">
+        <Link href="/contact_us" target="_blank">
           <Button className="cta-button text-lg p-6 rounded-lg text-primary-foreground"> {/* hover:text-primary hover:bg-primary-foreground */}
             {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
