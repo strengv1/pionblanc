@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useRef, useEffect } from "react";
 import VideoPlayer from "./VideoPlayer";
@@ -8,10 +8,10 @@ import { useTranslations } from "next-intl";
 export default function DemoSection() {
   const [currentSection, setCurrentSection] = useState<string | null>("section-1");
   const [activeVideo, setActiveVideo] = useState("/videos/ohjevideo1.mp4");
-  const [animationClass, setAnimationClass] = useState("");
+  const [animationClass, setAnimationClass] = useState("show");
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const t = useTranslations('DemoSection');
+  const t = useTranslations("DemoSection");
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -21,7 +21,7 @@ export default function DemoSection() {
           setAnimationClass("hide");
           setTimeout(() => {
             setCurrentSection(sectionId);
-            switch (sectionId){
+            switch (sectionId) {
               case "section-1":
                 setActiveVideo("/videos/ohjevideo1.mp4");
                 break;
@@ -34,26 +34,28 @@ export default function DemoSection() {
               default:
                 break;
             }
-            setAnimationClass("");
-          }, 300)
+            setTimeout(() => {
+              setAnimationClass("show");
+            }, 300);
+          }, 300);
         }
-      })
+      });
     },
     {
-      root: null, // Use the viewport as the root
-      threshold: 0.60, // Trigger when 60% of the section in view
-    })
-
-    sectionRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref); // Ensure ref is not null
+      root: null,
+      threshold: 0.60,
     });
 
-    return () => observer.disconnect(); // Cleanup on unmount
+    sectionRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
   }, [currentSection]);
 
-  const mobileSectionClass = "px-7 py-32"
+  const mobileSectionClass = "px-7 py-32";
   const mobileDivClass = "flex flex-col gap-2 pt-7";
-  const mobileTitleClass = "text-xl font-semibold"
+  const mobileTitleClass = "text-xl font-semibold";
 
   const desktopDivClass = "flex flex-col justify-center text-balance gap-5";
   const desktopTitleClass = "text-md lg:text-2xl font-semibold";
@@ -102,7 +104,7 @@ export default function DemoSection() {
 
           {/* Video and Content 3 */}
           <div className={`${mobileSectionClass}`}>
-          <VideoPlayer
+            <VideoPlayer
               src="/videos/ohjevideo3.mp4"
               controls
               autoPlay
@@ -118,16 +120,13 @@ export default function DemoSection() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden lg:flex flex-row w-full max-w-screen-2xl mx-auto ">
+        <div className="hidden lg:flex flex-row w-full max-w-screen-2xl mx-auto">
           {/* Left Fixed Column */}
-          <div className="w-1/2 mt-48 lg:mt-72 lg:-mb-26">
-            <div className={`px-4 w-full demo-video-container ${animationClass}
-              sticky top-1/2 transform -translate-y-1/2
-              lg:px-6
-            `}>
+          <div className="w-1/2 lg:mt-28 lg:-mb-26">
+            <div
+              className={`px-4 w-full demo-video-container ${animationClass} sticky top-1/3 -translate-y-1/2 lg:px-6`}
+            >
               {activeVideo && (
-                <>
-                {/* {activeVideo} */}
                 <VideoPlayer
                   src={activeVideo}
                   controls
@@ -138,16 +137,16 @@ export default function DemoSection() {
                   width="100%"
                   height="100%"
                 />
-                </>
-                
               )}
             </div>
           </div>
 
           {/* Right Scrolling Column */}
-          <div className="scroll-container w-1/2 flex flex-col" >
+          <div className="scroll-container w-1/2 flex flex-col">
             <div
-              className={desktopDivClass} data-section-id="section-1" id="demo-1"
+              className={desktopDivClass}
+              data-section-id="section-1"
+              id="demo-1"
               ref={(el: any) => (sectionRefs.current[0] = el)}
               style={{ height: "85svh" }}
             >
@@ -156,7 +155,9 @@ export default function DemoSection() {
             </div>
 
             <div
-              className={desktopDivClass} data-section-id="section-2" id="demo-2"
+              className={desktopDivClass}
+              data-section-id="section-2"
+              id="demo-2"
               ref={(el: any) => (sectionRefs.current[1] = el)}
               style={{ height: "85svh" }}
             >
@@ -164,7 +165,9 @@ export default function DemoSection() {
               <p className={desktopParagraphClass}>{t("section_2_paragraph")}</p>
             </div>
             <div
-              className={desktopDivClass} data-section-id="section-3" id="demo-3"
+              className={desktopDivClass}
+              data-section-id="section-3"
+              id="demo-3"
               ref={(el: any) => (sectionRefs.current[2] = el)}
               style={{ height: "85svh" }}
             >
@@ -176,12 +179,29 @@ export default function DemoSection() {
           {/* Navigation bubbles */}
           <div>
             <div className="mt-48 lg:mt-96 lg:mb-72 sticky top-1/2 transform -translate-y-1/2 flex flex-col gap-3">
-              <Link href="#demo-1" className={`${currentSection==="section-1" ? "bg-primary" : "bg-white"} w-4 h-4 mx-4 rounded-full`} style={{border:"1px solid black"}} />
-              <Link href="#demo-2" className={`${currentSection==="section-2" ? "bg-primary" : "bg-white"}  w-4 h-4 mx-4 rounded-full`} style={{border:"1px solid black"}} />
-              <Link href="#demo-3" className={`${currentSection==="section-3" ? "bg-primary" : "bg-white"}  w-4 h-4 mx-4 rounded-full`} style={{border:"1px solid black"}} />
+              <Link
+                href="#demo-1"
+                className={`${
+                  currentSection === "section-1" ? "bg-primary" : "bg-white"
+                } w-4 h-4 mx-4 rounded-full`}
+                style={{ border: "1px solid black" }}
+              />
+              <Link
+                href="#demo-2"
+                className={`${
+                  currentSection === "section-2" ? "bg-primary" : "bg-white"
+                }  w-4 h-4 mx-4 rounded-full`}
+                style={{ border: "1px solid black" }}
+              />
+              <Link
+                href="#demo-3"
+                className={`${
+                  currentSection === "section-3" ? "bg-primary" : "bg-white"
+                }  w-4 h-4 mx-4 rounded-full`}
+                style={{ border: "1px solid black" }}
+              />
             </div>
           </div>
-          
         </div>
       </div>
     </section>
