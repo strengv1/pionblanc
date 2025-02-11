@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 export default function DemoSection() {
   const [currentSection, setCurrentSection] = useState<string | null>("section-1");
-  const [activeVideo, setActiveVideo] = useState("/videos/ohjevideo1.mp4");
+  const [activeVideo, setActiveVideo] = useState("/videos/etsi_tuotteita.mp4");
   const [animationClass, setAnimationClass] = useState("show");
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -23,7 +23,7 @@ export default function DemoSection() {
             setCurrentSection(sectionId);
             switch (sectionId) {
               case "section-1":
-                setActiveVideo("/videos/ohjevideo1.mp4");
+                setActiveVideo("/videos/etsi_tuotteita.mp4");
                 break;
               case "section-2":
                 setActiveVideo("/videos/ohjevideo2.mp4");
@@ -73,7 +73,7 @@ export default function DemoSection() {
           {/* Video and Content 1 */}
           <div className={`${mobileSectionClass}`}>
             <VideoPlayer
-              src="/videos/ohjevideo1.mp4"
+              src="/videos/etsi_tuotteita.mp4"
               controls
               autoPlay
               loop
