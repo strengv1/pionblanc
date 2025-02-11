@@ -8,17 +8,17 @@ export default function About() {
   const teamMembers = [
     {
       name: "Jan",
-      quote: "Ville on hyvä koodaa.", //Driven by simplicity and efficiency
+      quote: t("QuoteJan"), //Driven by simplicity and efficiency
       image: "/jan.jpg"
     },
     {
       name: "Lauri",
-      quote: "Olisinpa mä enemmän Villen kaltainen.", // Code, coffee, and creativity
+      quote: t("QuoteLauri"), // Code, coffee, and creativity
       image: "/lauri.png"
     },
     {
       name: "Ville",
-      quote: "Turning ideas into reality.",
+      quote: t("QuoteVille"),
       image: "/ville.jpg"
     }
   ]
