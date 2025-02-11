@@ -35,7 +35,7 @@ export default function LogoGrid() {
         <p className="text-xl font-normal text-balance">{t("main_text_bold")}</p>
       </div>
       
-      <div className="grid max-w-screen-xl mx-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid max-w-screen-xl mx-10 grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
         {companies.map((company, index) => (
           <Link key={index} href={company.url} target="_blank" rel="noopener noreferrer">
             <Card className="overflow-hidden hover:shadow-lg hover:scale-105 transition">
@@ -46,7 +46,7 @@ export default function LogoGrid() {
                     alt={`${company.name} logo`}
                     width={150}
                     height={200}
-                    className="object-contain w-auto h-20 sm:h-24"
+                    className="object-contain w-24 sm:w-32 md:w-40 lg:w-48 h-10 sm:h-20 md:h-24"
                     loading="lazy"
                   />
                   <h2 className="text-lg font-semibold text-center">{company.name}</h2>
