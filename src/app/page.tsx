@@ -6,7 +6,7 @@ import DemoSection from "./_components/DemoSection"
 import FinalHook from "./_components/FinalHook"
 import HeroSection from "./_components/HeroSection"
 // import PricingSection from "./_components/PricingSection"
-import QuoteSection from "./_components/QuoteSection"
+import TestimonialsSection from "./_components/TestimonialsSection"
 
 export default function LandingPage() {
   return (
@@ -17,7 +17,7 @@ export default function LandingPage() {
         <HeroSection />
         <AdditionalInfoSection />
         <div className="overflow-x-clip">
-          <QuoteSection />
+          <TestimonialsSection />
         </div>
         <DemoSection />
         <FinalHook />

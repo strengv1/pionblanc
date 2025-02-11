@@ -18,10 +18,10 @@ html{
 
 }
 
-.quote-section{
+.testimonials-section{
   position: relative;
 }
-.quote-section::after {
+.testimonials-section::after {
   content: '';
   position: absolute;
   bottom: 0;
