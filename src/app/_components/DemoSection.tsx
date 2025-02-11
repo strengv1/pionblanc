@@ -36,8 +36,8 @@ export default function DemoSection() {
             }
             setTimeout(() => {
               setAnimationClass("show");
-            }, 300);
-          }, 300);
+            }, 200);
+          }, 200);
         }
       });
     },

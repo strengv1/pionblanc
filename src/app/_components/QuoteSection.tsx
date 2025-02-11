@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function QuoteSection() {
   const t = useTranslations('QuoteSection');
@@ -11,10 +12,12 @@ export default function QuoteSection() {
        <div className="w-full items-center justify-center text-center text-5xl md:text-8xl">
           5/5
         </div>
-        <div className="w-full flex flex-col gap-10">
-          <h1 className="text-lg lg:text-3xl font-semibold">
-            Daniels
-          </h1>
+        <div className="flex flex-col gap-10">
+          <Link href="https://daniel.fi/" target="_blank">
+            <h1 className="text-lg lg:text-3xl font-semibold hover:underline underline-offset-4">
+              Daniel&apos;s
+            </h1>
+          </Link>
           <p className="text-md lg:text-2xl">
             &quot;{t("from_daniels")}&quot;
           </p>

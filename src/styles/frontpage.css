@@ -4,13 +4,13 @@ html{
 
 /* Fading animations */
 .demo-video-container {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   opacity: 1;
   transform: scale(1);
 }
 .demo-video-container.hide {
   opacity: 0;
-  transform: scale(0.90);
+  transform: scale(0.94);
 }
 .demo-video-container.show {
   opacity: 1;
