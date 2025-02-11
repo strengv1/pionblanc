@@ -47,7 +47,7 @@ export default function LocaleSwitcherSelect({
         onValueChange={onChange}
         onOpenChange={setIsDropdownOpen}
       >
-        <SelectTrigger className="flex gap-2">
+        <SelectTrigger className="flex gap-[2px]">
           <Globe style={{ height: "1.2rem" }}/>
           {/* <SelectValue placeholder="Select Language" /> */}
         </SelectTrigger>

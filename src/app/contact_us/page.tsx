@@ -12,7 +12,7 @@ export default function ContactUs() {
   return (
     <div className="max-w-screen-md w-full mx-auto my-24 px-4 flex-1">
       <div className="py-20 lg:py-32 text-left">
-        <h1 className="text-3xl font-bold my-4">
+        <h1 className="text-3xl font-bold">
           {t("title")}
         </h1>
         <p className="md:text-md lg:text-lg text-left text-balance">
@@ -40,7 +40,7 @@ export default function ContactUs() {
 
         <Card className={cardClasses}>
           <div className={commonDivClasses}>
-            <h1 className="font-bold">Lauri Vaara (Co-Founder)</h1>
+            <h1 className="font-bold">Lauri Vaara</h1>
             <p className="flex items-center">
               <PhoneCallIcon className="mr-2" /><span>+358 50 553 7079</span>
             </p>
@@ -59,7 +59,7 @@ export default function ContactUs() {
 
         <Card className={cardClasses}>
           <div className={commonDivClasses}>
-            <h1 className="font-bold">Ville Strengell (Co-Founder)</h1>
+            <h1 className="font-bold">Ville Strengell</h1>
             <p className="flex items-center">
               <PhoneCallIcon className="mr-2" /><span>+358 50 494 5684</span>
             </p>

@@ -23,9 +23,9 @@ export default async function RootLayout({
         <link rel="preload" href="/videos/ohjevideo3.mp4" as="video" />
       </head>
       <body className="flex flex-col min-h-screen">
-        <Header />
-
         <NextIntlClientProvider messages={messages}>
+          <Header />
+
           {children}
         </NextIntlClientProvider>
         <Footer />
