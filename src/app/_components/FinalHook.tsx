@@ -16,7 +16,7 @@ export default function FinalHookSection() {
           <h1 className="text-lg lg:text-3xl font-semibold">
             {t("title")}
           </h1>
-          <Link href="/contact_us" className="text-xl lg:text-2xl border-b-2 border-primary catalogue-link">
+          <Link href="/contact_us" className="text-xl lg:text-2xl border-b-2 border-primary internal-link">
             {t("button")}
           </Link>
         </div>

@@ -63,7 +63,7 @@ export default function LogoGrid() {
           {t("main_text_normal_start")}
         </h1>
         <p className="text-xl font-normal text-balance">
-          <Link href="/contact_us" className="border-b-2 border-primary catalogue-link">{t("let_us_know_your_needs")}</Link>
+          <Link href="/contact_us" className="border-b-2 border-primary internal-link">{t("let_us_know_your_needs")}</Link>
           {t("main_text_normal_end")} 
         </p>
       </div>

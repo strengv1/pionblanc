@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 
-/* Fading animations */
+/* Fading animations */ 
 .demo-video-container {
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   opacity: 1;
@@ -57,15 +57,15 @@ html{
   z-index: -1;
 }
 
-.catalogue-link {
+.internal-link {
   background-color: transparent;
   border-bottom: 2px solid hsl(var(--primary));
   cursor: pointer;
   overflow: hidden; /* Ensures the pseudo-element stays inside the button */
   transition: color 0.3s ease; /* Smooth color transition */
+  text-wrap: nowrap;
 }
-
-.catalogue-link::before {
+.internal-link::before {
   content: '';
   position: absolute;
   top: 0;
@@ -76,11 +76,10 @@ html{
   z-index: 0;
   transition: width 0.4s ease;
 }
-
-.catalogue-link:hover::before {
+.internal-link:hover::before {
   width: 100%;
 }
-.catalogue-link {
+.internal-link {
   position: relative;
   z-index: 1;
 }

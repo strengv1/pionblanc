@@ -98,9 +98,9 @@ export default function AdditionalInfoSection() {
           </p>
           <p className="text-md lg:text-2xl md:text-balance">
             {t("paragraph2Start")} 
-            <Link href="/catalogue" className="border-b-2 border-primary catalogue-link">{t("our_catalogue")}</Link>
+            <Link href="/catalogue" className="border-b-2 border-primary internal-link">{t("our_catalogue")}</Link>
             {t("paragraph2Middle")} 
-            <Link href="/contact_us" className="border-b-2 border-primary catalogue-link">{t("few_clicks_away")}</Link>
+            <Link href="/contact_us" className="border-b-2 border-primary internal-link">{t("few_clicks_away")}</Link>
             {t("paragraph2End")} 
           </p>
         </div>
