@@ -2,7 +2,7 @@
 
 import "../styles/frontpage.css"
 import AdditionalInfoSection from "./_components/AdditionalInfoSection"
-import ComparisonTable from "./_components/ComparisonTable"
+import ComparisonSection from "./_components/ComparisonSection"
 import DemoSection from "./_components/DemoSection"
 import FinalHook from "./_components/FinalHook"
 import HeroSection from "./_components/HeroSection"
@@ -21,7 +21,7 @@ export default function LandingPage() {
           <TestimonialsSection />
         </div>
         <DemoSection />
-        <ComparisonTable />
+        <ComparisonSection />
         <FinalHook />
         {/* <PricingSection /> */}
       </main>

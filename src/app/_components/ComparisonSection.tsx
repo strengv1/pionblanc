@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, TriangleAlert, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-export default function ComparisonTable() {
+export default function ComparisonSection() {
   const t = useTranslations("ComparisonSection");
 
   const cards = [
@@ -46,8 +46,6 @@ export default function ComparisonTable() {
       ],
     },
   ];
-
-  
 
   return (
     <section className="w-full mx-auto max-w-screen-xl px-6 xl:px-0 pt-12 md:pt-24 lg:pt-32">
