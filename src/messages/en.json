@@ -1,5 +1,5 @@
 {
-  "HomePage": {
+  "HeroSection": {
     "hero_title": "Time-Saver for Small Businesses!",
     "hero_desc": "Forget manual quote templates – automate your quoting process easily and efficiently with a generator tailored directly to your needs.",
     "call_to_action": "Contact us",
@@ -13,12 +13,13 @@
     "our_story": "Our Story"
   },
   "AdditionalInfoSection": {
-    "title": "We have gathered a wide range of product data from several suppliers",
-    "paragraphStart": "Explore ",
+    "title": "All Your Suppliers' Products in One Place!",
+    "paragraph1": "We have gathered a comprehensive selection of product data from multiple suppliers, so you don't have to browse their websites while creating quotes.",
+    "paragraph2Start": "Explore ",
     "our_catalogue": "our catalogue",
-    "paragraphMiddle": " and check if the product information you are looking for is already available. If something is missing, don't hesitate to contact us – we're just a ",
+    "paragraph2Middle": " and check if the product information you are looking for is already available. If something is missing, don't hesitate to contact us – we're just a ",
     "few_clicks_away": "few clicks away",
-    "paragraphEnd": " and happy to help!",
+    "paragraph2End": " and happy to help!",
     "additionalTitle": "If you're still creating your offers manually with Excel, you're missing out",
     "additionalSubtext": "Focus on what matters – we streamline your quoting process so you can invest in",
     "rotating_word_1": "growing your business",

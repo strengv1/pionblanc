@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link";
 
 export default function HeroSection() {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('HeroSection');
 
   return (
     <section className="hero-section

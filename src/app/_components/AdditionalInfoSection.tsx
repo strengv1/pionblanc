@@ -71,14 +71,14 @@ export default function AdditionalInfoSection() {
 
   return (
     <section className="
-      additional-info-section w-full mt-20 mb-20 md:mt-40 lg:mt-60 flex flex-col gap-32 mx-auto items-center text-center
+      additional-info-section w-full mt-20 mb-20 md:mt-40 lg:mt-60 flex flex-col gap-32 items-center
     ">
-      <div className="flex text-white bg-secondary py-10 px-0 md:py-20 md:px-20 lg:px-32 rounded-3xl">
-        <div className="w-full flex flex-col gap-4 lg:gap-10">
-          <h1 className="text-lg lg:text-3xl font-semibold">
+      <div className="flex text-white bg-secondary rounded-3xl text-center mx-4 md:mx-8">
+        <div className="w-full flex flex-col gap-4 lg:gap-10 my-10 md:my-20 mx-4 md:mx-20 lg:mx-36 ">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
             {t("additionalTitle")}
           </h1>
-          <p className="text-xl lg:text-2xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
+          <p className="text-lg md:text-xl lg:text-2xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
             {t("additionalSubtext")}
             <span className="inline-block min-w-[50%] text-center">
               <DynamicText />
@@ -87,20 +87,23 @@ export default function AdditionalInfoSection() {
         </div>
       </div>
       
-      <div className="flex flex-col lg:flex-row gap-12 lg:gap-10 mx-14 md:mx-32 lg:mx-5 max-w-screen-xl">
+      <div className="flex flex-col lg:flex-row max-w-screen-xl text-left mx-4 md:mx-8">
         <div className="w-full flex flex-col gap-4 lg:gap-10 justify-center">
           <h1 className="text-lg lg:text-3xl font-semibold">
             {t("title")}
           </h1>
-          <p className="text-md lg:text-2xl text-balance ">
-            {t("paragraphStart")} 
+          <p className="text-md lg:text-2xl md:text-balance lg:-mb-4">
+            {t("paragraph1")}
+          </p>
+          <p className="text-md lg:text-2xl md:text-balance ">
+            {t("paragraph2Start")} 
             <Link href="/catalogue" className="border-b-2 border-primary catalogue-link">{t("our_catalogue")}</Link>
-            {t("paragraphMiddle")} 
+            {t("paragraph2Middle")} 
             <Link href="/contact_us" className="border-b-2 border-primary catalogue-link">{t("few_clicks_away")}</Link>
-            {t("paragraphEnd")} 
+            {t("paragraph2End")} 
           </p>
         </div>
-        <div className="w-full relative h-[280px] md:h-[350px] lg:h-[400px] flex items-center justify-center text-center">
+        <div className="w-full relative h-[280px] md:h-[350px] lg:h-[400px] flex items-center justify-center text-center mt-4 lg:mt-0">
           <Image
             src="/tuotedataa.png"
             alt=""

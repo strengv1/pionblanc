@@ -1,5 +1,5 @@
 {
-  "HomePage": {
+  "HeroSection": {
     "hero_title": "Ajansäästäjä pienyrityksille!",
     "hero_desc": "Unohda manuaaliset tarjouspohjat – automatisoi tarjousprosessisi helposti ja tehokkaasti juuri sinun tarpeisiisi räätälöidyllä generaattorilla.",
     "call_to_action": "Ota yhteyttä",
@@ -13,12 +13,13 @@
     "our_story": "Tarinamme"
   },
   "AdditionalInfoSection": {
-    "title": "Olemme koonneet laajan valikoiman tuotedatoja useilta toimittajilta",
-    "paragraphStart": "Tutustu ",
+    "title": "Kaikki toimittajiesi tuotteet yhdestä paikasta!",
+    "paragraph1": "Olemme koonneet kattavan valikoiman tuotedatoja useilta toimittajilta, jotta sinun ei tarvitse selata heidän sivujaan tarjouksia tehdessäsi.",
+    "paragraph2Start": "Tutustu ",
     "our_catalogue": "katalogiimme",
-    "paragraphMiddle": " ja tarkista, löytyykö etsimäsi tuotteiden tiedot jo valmiiksi. Jos jotain puuttuu, ota rohkeasti yhteyttä – autamme mielellämme. Olemme vain ",
+    "paragraph2Middle": " ja tarkista, löytyykö etsimäsi tuotteiden tiedot jo valmiiksi. Jos jotain puuttuu, ota rohkeasti yhteyttä – autamme mielellämme. Olemme vain ",
     "few_clicks_away": "muutaman klikkauksen päässä",
-    "paragraphEnd": "!",
+    "paragraph2End": "!",
     "additionalTitle":"Jos teet laskusi edelleen manuaalisesti Excelillä, olet aikaasi jäljessä",
     "additionalSubtext":"Keskity olennaiseen – me nopeutamme tarjousprosessiasi, jotta voit panostaa",
     "rotating_word_1": "liiketoimintasi kasvuun",
