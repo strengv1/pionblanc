@@ -26,7 +26,7 @@ export default function ContactUs() {
               <PhoneCallIcon className="mr-2" /><span>+358 50 46 46 745</span>
             </p>
             <p className="flex items-center">
-              <MailIcon className="mr-2" /> <span>jan.harkonen@gmail.com</span>
+              <MailIcon className="mr-2" /> <span>jan.harkonen@pionblanc.fi</span>
             </p>
           </div>
           <Image
@@ -45,7 +45,7 @@ export default function ContactUs() {
               <PhoneCallIcon className="mr-2" /><span>+358 50 553 7079</span>
             </p>
             <p className="flex items-center">
-              <MailIcon className="mr-2" /> <span>Lauri.vaara385@gmail.com</span>
+              <MailIcon className="mr-2" /> <span>lauri.vaara@pionblanc.fi</span>
             </p> 
           </div>
           <Image
@@ -64,7 +64,7 @@ export default function ContactUs() {
               <PhoneCallIcon className="mr-2" /><span>+358 50 494 5684</span>
             </p>
             <p className="flex items-center">
-              <MailIcon className="mr-2" /> <span>villes-97@hotmail.com</span>
+              <MailIcon className="mr-2" /> <span>ville.strengell@pionblanc.fi</span>
             </p>
           </div>
           <Image
