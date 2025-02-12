@@ -26,11 +26,11 @@ export default function DemoSection() {
                 setActiveVideo("/videos/etsi_tuotteita.mp4");
                 break;
               case "section-2":
-                setActiveVideo("/videos/ohjevideo2.mp4");
+                setActiveVideo("/videos/luo_tarjous.mp4");
                 break;
-              case "section-3":
-                setActiveVideo("/videos/ohjevideo3.mp4");
-                break;
+              // case "section-3":
+              //   setActiveVideo("/videos/ohjevideo3.mp4");
+              //   break;
               default:
                 break;
             }
@@ -89,7 +89,7 @@ export default function DemoSection() {
           {/* Video and Content 2 */}
           <div className={`${mobileSectionClass}`}>
             <VideoPlayer
-              src="/videos/ohjevideo2.mp4"
+              src="/videos/luo_tarjous.mp4"
               controls
               autoPlay
               loop
@@ -103,7 +103,7 @@ export default function DemoSection() {
           </div>
 
           {/* Video and Content 3 */}
-          <div className={`${mobileSectionClass}`}>
+          {/* <div className={`${mobileSectionClass}`}>
             <VideoPlayer
               src="/videos/ohjevideo3.mp4"
               controls
@@ -116,7 +116,7 @@ export default function DemoSection() {
               <h3 className={mobileTitleClass}>{t("section_3_title")}</h3>
               <p>{t("section_3_paragraph")}</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Desktop View */}
@@ -164,7 +164,7 @@ export default function DemoSection() {
               <h3 className={desktopTitleClass}>{t("section_2_title")}</h3>
               <p className={desktopParagraphClass}>{t("section_2_paragraph")}</p>
             </div>
-            <div
+            {/* <div
               className={desktopDivClass}
               data-section-id="section-3"
               id="demo-3"
@@ -173,7 +173,7 @@ export default function DemoSection() {
             >
               <h3 className={desktopTitleClass}>{t("section_3_title")}</h3>
               <p className={desktopParagraphClass}>{t("section_3_paragraph")}</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Navigation bubbles */}
@@ -193,13 +193,13 @@ export default function DemoSection() {
                 }  w-4 h-4 mx-4 rounded-full`}
                 style={{ border: "1px solid black" }}
               />
-              <Link
+              {/* <Link
                 href="#demo-3"
                 className={`${
                   currentSection === "section-3" ? "bg-primary" : "bg-white"
                 }  w-4 h-4 mx-4 rounded-full`}
                 style={{ border: "1px solid black" }}
-              />
+              /> */}
             </div>
           </div>
         </div>

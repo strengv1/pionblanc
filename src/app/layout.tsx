@@ -20,8 +20,8 @@ export default async function RootLayout({
       <head>
         <link rel="icon" href="favicon.png"></link>
         <link rel="preload" href="/videos/etsi_tuotteita.mp4" as="video" />
-        <link rel="preload" href="/videos/ohjevideo2.mp4" as="video" />
-        <link rel="preload" href="/videos/ohjevideo3.mp4" as="video" />
+        <link rel="preload" href="/videos/luo_tarjous.mp4" as="video" />
+        {/* <link rel="preload" href="/videos/ohjevideo3.mp4" as="video" /> */}
       </head>
       <body className="flex flex-col min-h-screen">
         <NextIntlClientProvider messages={messages}>

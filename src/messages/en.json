@@ -36,9 +36,7 @@
     "section_1_title": "Search and Select",
     "section_1_paragraph": "Find the right products quickly and effortlessly. With our tool, you can browse supplier product catalogs, use filters, and add products directly to a quotation – simple and efficient!",
     "section_2_title": "Manage Your Quotation Template",
-    "section_2_paragraph": "Customize your quotation to perfection. In the 'Create Quotation' view, you can save your and your customer's details easily across multiple templates. Products selected in the previous step are automatically included, and you can edit them line by line.",
-    "section_3_title": "Generate the Final Quotation!",
-    "section_3_paragraph": "The final touch with just one click! The 'Generate Quotation' button combines your selected products and the active template into a ready-to-use Excel file. You can finalize it yourself and export it as a PDF for your customer."
+    "section_2_paragraph": "Customize your quotation to perfection. You can easily save both your own and your customer's information for different offers. You can also set the quantities and discounts for the products added in the previous step. Finally, the completed offer can be downloaded using the 'Generate Offer' button."
   },
   "Footer": {
     "all_rights": "All rights reserved",
