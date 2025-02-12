@@ -78,6 +78,31 @@
   "Privacy": {
     "title": "Privacy",
     "paragraph": "We do not collect any personal data through this website. Our software handles data under individual agreements with our customers"
+  },
+  "ComparisonSection": {
+    "title": "Comparison",
+    "from": "From",
+    "per_month": "/mo",
+    "efficient_proc": "Efficient process",
+    "customizable": "Customizable as needed",
+    "integrated_prod_data": "Integrated product data",
+    "easy_and_efficient": "Easy and efficient",
+    "excel_template": "Excel template",
+    "hidden_cost": "(Hidden cost: Time and errors)",
+    "slow_and_errorprone": "Slow and error-prone process",
+    "flexible": "Flexible",
+    "product_data_must_be_searched": "Product data must be searched manually",
+    "takes_time_and_work": "Requires manual work and time",
+    "large_enterprise_software": "Large enterprise software",
+    "long_commitment_and_high_price": "long commitment and high costs",
+    "efficient_no_tailoring": "Efficient but not customizable",
+    "top_down_processes": "Top-down processes",
+    "manual_data_no_integration": "Manual product data, no integration",
+    "expensive_not_for_sme": "Expensive and rigid, not suitable for small businesses",
+    "free_online_tool": "Free online tool",
+    "no_hidden_costs": "– No hidden costs, limited functionality",
+    "limited_flexibility": "Limited flexibility",
+    "requires_manual_work": "Requires manual work"
   }
 
 }

@@ -79,6 +79,31 @@
   "Privacy": {
     "title": "Yksityisyys",
     "paragraph": "Emme kerää mitään henkilötietoja tämän verkkosivuston kautta. Ohjelmistomme käsittelee dataa yksilöllisten sopimusten mukaisesti asiakkaidemme kanssa."
+  },
+  "ComparisonSection": {
+    "title": "Vertailu",
+    "from": "Alk.",
+    "per_month": "/kk",
+    "efficient_proc": "Tehokas prosessi",
+    "customizable": "Räätälöitävissä tarpeen mukaan",
+    "integrated_prod_data": "Integroidut tuotetiedot",
+    "easy_and_efficient": "Helppo ja tehokas",
+    "excel_template": "Excel-pohja",
+    "hidden_cost": "(Piilokustannus: Aika ja virheet)",
+    "slow_and_errorprone": "Hidas ja virhealtis",
+    "flexible": "Joustava",
+    "product_data_must_be_searched": "Tuotetiedot pitää etsiä itse",
+    "takes_time_and_work": "Vaatii manuaalista työtä ja aikaa",
+    "large_enterprise_software": "Laaja yritysohjelmisto",
+    "long_commitment_and_high_price": "pitkä sitoutuminen ja korkeat kulut",
+    "efficient_no_tailoring": "Tehokas, mutta ei räätälöitävissä",
+    "top_down_processes": "Ylhäältä määrätyt prosessit",
+    "manual_data_no_integration": "Manuaaliset tuotetiedot, ei integraatiota",
+    "expensive_not_for_sme": "Kallis ja monimutkainen, ei sovellu pienille yrityksille",
+    "free_online_tool": "Ilmainen verkkotyökalu",
+    "no_hidden_costs": "– Ei piilokustannuksia, rajallinen toiminnallisuus",
+    "limited_flexibility": "Rajallinen joustavuus",
+    "requires_manual_work": "Vaatii manuaalista työtä"
   }
 
 }

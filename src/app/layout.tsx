@@ -18,6 +18,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        <link rel="icon" href="favicon.png"></link>
         <link rel="preload" href="/videos/etsi_tuotteita.mp4" as="video" />
         <link rel="preload" href="/videos/ohjevideo2.mp4" as="video" />
         <link rel="preload" href="/videos/ohjevideo3.mp4" as="video" />
