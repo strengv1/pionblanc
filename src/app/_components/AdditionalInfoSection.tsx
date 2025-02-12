@@ -47,15 +47,15 @@ const DynamicText = () => {
   }, [words]);
 
   return (
-    <span className="relative inline-flex justify-center min-w-[331px] lg:min-w-[397px]">
+    <span className="relative inline-flex justify-center">
       <span
         ref={textRef}
-        className={`font-bold  text-primary transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
+        className={`font-bold text-primary transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
       >
         {currentWord}
       </span>
       <span
-        className="absolute font-bold transition-transform duration-500"
+        className="hidden xs:block absolute font-bold transition-transform duration-500"
         style={{
           transform: `translateX(${(wordWidth / 2) + 3}px)`,
         }}
@@ -74,13 +74,13 @@ export default function AdditionalInfoSection() {
       additional-info-section w-full mt-20 mb-20 md:mt-40 lg:mt-60 flex flex-col gap-32 items-center
     ">
       <div className="flex text-white bg-secondary rounded-3xl text-center mx-4 md:mx-8">
-        <div className="w-full flex flex-col gap-4 lg:gap-10 my-10 md:my-20 mx-4 md:mx-20 lg:mx-36 ">
+        <div className="w-full flex flex-col gap-4 lg:gap-10 my-10 md:my-20 mx-4 md:mx-20 lg:mx-36">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold">
             {t("additionalTitle")}
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl max-w-screen-md mx-4 md:mx-auto text-balance flex flex-wrap justify-center">
             {t("additionalSubtext")}
-            <span className="inline-block min-w-[50%] text-center">
+            <span className="inline-block text-center">
               <DynamicText />
             </span>
           </p>
@@ -95,7 +95,7 @@ export default function AdditionalInfoSection() {
           <p className="text-md lg:text-2xl md:text-balance lg:-mb-4">
             {t("paragraph1")}
           </p>
-          <p className="text-md lg:text-2xl md:text-balance ">
+          <p className="text-md lg:text-2xl md:text-balance">
             {t("paragraph2Start")} 
             <Link href="/catalogue" className="border-b-2 border-primary catalogue-link">{t("our_catalogue")}</Link>
             {t("paragraph2Middle")} 

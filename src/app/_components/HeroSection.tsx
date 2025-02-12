@@ -22,7 +22,7 @@ export default function HeroSection() {
         </p>
 
       </div>
-      <div className="space-x-10 z-10">
+      <div className="space-x-2 xs:space-x-10 z-10">
         <Link href="/contact_us">
           <Button className="cta-button text-lg p-6 rounded-lg text-primary-foreground"> {/* hover:text-primary hover:bg-primary-foreground */}
             {t("call_to_action")} <ArrowRight className="ml-2 h-4 w-4" />

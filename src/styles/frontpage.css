@@ -84,3 +84,8 @@ html{
   position: relative;
   z-index: 1;
 }
+
+/* 
+*{
+  border: solid 1px red;
+} */
