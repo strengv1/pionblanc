@@ -48,9 +48,10 @@ const DynamicText = () => {
 
   return (
     <span className="relative inline-flex justify-center">
+      {/* Must adjust xs depending on longest rotating word! */}
       <span
         ref={textRef}
-        className={`font-bold text-primary transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
+        className={`h-12 xs:h-auto font-bold text-primary transition-all duration-500 ${fade ? "opacity-100 visible" : "opacity-0 invisible"}`}
       >
         {currentWord}
       </span>
