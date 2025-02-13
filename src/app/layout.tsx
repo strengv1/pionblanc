@@ -4,6 +4,36 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import Header from "./Header";
 import Footer from "./Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://pionblanc.fi"),
+  keywords: [
+    "Tarjousgeneraattori pienyrityksille",
+    "Tarjonnan automaatiotyökalu",
+    "Tarjousten automatisointi",
+    "Tarjousten luontiohjelma",
+    "Tarjoustyökalu",
+    "Mukautettu tarjousohjelmisto",
+    "Pienyrityksille suunnattu ohjelmistoratkaisu",
+    "Automaattinen tilausvahvistusohjelma",
+    "Tuotekatalogin hallinta",
+    "Tuotetietojen integrointi",
+    "Pienyritysohjelmistoratkaisut",
+    "Kotisivut",
+    "Nettisivut",
+    "Ville Strengell",
+    "Jan Härkönen",
+    "Lauri Vaara"
+  ],
+  title: "Pion Blanc Oy | Tarjousgeneraattori pienyrityksille | Automatisoi tarjoukset ja tilaukset",
+  description: "Tutustu Pion Blancin tarjousgeneraattoriin – mukautettu ohjelmistoratkaisu, joka automatisoi tarjousten luomisen, integroi toimittajatiedot ja nopeuttaa tilausvahvistuksia pienyrityksille. Säästä aikaa ja kasvata liiketoimintaasi helposti käytettävällä alustallamme.",
+
+  // openGraph: {
+  //   description: "Pion Blanc Oy | Tarjousgeneraattori pienyrityksille",
+  //   images: [""]
+  // }
+}
 
 export default async function RootLayout({
   children,

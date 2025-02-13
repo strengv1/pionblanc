@@ -107,7 +107,7 @@ export default function AdditionalInfoSection() {
         <div className="w-full relative h-[280px] md:h-[350px] lg:h-[400px] flex items-center justify-center text-center mt-4 lg:mt-0">
           <Image
             src="/tuotedataa.png"
-            alt=""
+            alt="tuotedata.png"
             className="object-contain"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

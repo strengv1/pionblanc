@@ -33,7 +33,7 @@ export default function ContactUs() {
           </div>
           <Image
             src="/jan.jpg"
-            alt=""
+            alt="Jan Härkönen"
             width={80}
             height={80}
             className={imageClasses}
@@ -52,7 +52,7 @@ export default function ContactUs() {
           </div>
           <Image
             src="/lauri.png"
-            alt=""
+            alt="Lauri Vaara"
             width={80}
             height={80}
             className={imageClasses}
@@ -71,7 +71,7 @@ export default function ContactUs() {
           </div>
           <Image
             src="/ville.jpg"
-            alt=""
+            alt="Ville Strengell"
             width={80}
             height={80}
             className={imageClasses}
