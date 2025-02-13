@@ -2,6 +2,7 @@
 
 import "../../styles/frontpage.css"
 import { useTranslations } from 'next-intl';
+import Image from "next/image";
 import Link from 'next/link';
 
 export default function FinalHookSection() {
@@ -16,9 +17,21 @@ export default function FinalHookSection() {
           <h1 className="text-2xl lg:text-3xl font-semibold">
             {t("title")}
           </h1>
-          <Link href="/contact_us" className="text-xl lg:text-2xl border-b-2 border-primary internal-link">
-            {t("button")}
-          </Link>
+          <div className="relative">
+            <Link href="/contact_us" className="text-xl lg:text-2xl border-b-2 border-primary internal-link">
+              {t("button")}
+            </Link>
+            <Image 
+              className="absolute -left-24 sm:-left-40 -bottom-24 md:-left-40 md:-bottom-24"
+              style={{ transform: "rotate(-5deg)" }} 
+              src="scribble_arrow.svg"
+              alt=""
+
+              width={150}
+              height={150}
+            />
+          </div>
+          
         </div>
       </div>
 
