@@ -13,7 +13,7 @@ export default function ComparisonSection() {
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("quick_process")}</>,
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("customizable")}</>,
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("integrated_prod_data")}</>,
-        <div className="text-green-500">{t("easy_and_efficient")}<CheckCircle className="h-6 w-6 ml-1 inline" /></div>,
+        <div key="4" className="text-green-500">{t("easy_and_efficient")}<CheckCircle className="h-6 w-6 ml-1 inline" /></div>,
       ],
     },
     {
@@ -23,7 +23,7 @@ export default function ComparisonSection() {
         <><TriangleAlert className="h-4 w-4 mr-1 inline text-yellow-600" /> {t("slow_and_errorprone")}</>,
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("flexible")}</>,
         <><X className="h-6 w-6 mr-1 inline text-red-600" strokeWidth={4} /> {t("product_data_must_be_searched")}</>,
-        <div className="text-yellow-600"> {t("takes_time_and_work")}<TriangleAlert className="h-6 w-6 ml-1 inline" /></div>,
+        <div key="4" className="text-yellow-600"> {t("takes_time_and_work")}<TriangleAlert className="h-6 w-6 ml-1 inline" /></div>,
       ],
     },
     {
@@ -33,7 +33,7 @@ export default function ComparisonSection() {
         <><TriangleAlert className="h-4 w-4 mr-1 inline text-yellow-600" /> {t("efficient_no_tailoring")}</>,
         <><X className="h-6 w-6 mr-1 inline text-red-600" strokeWidth={4} /> {t("top_down_processes")}</>,
         <><X className="h-6 w-6 mr-1 inline text-red-600" strokeWidth={4} /> {t("manual_data_no_integration")}</>,
-        <div className="text-red-600">{t("expensive_not_for_sme")}<X className="h-7 w-7 ml-1 inline" strokeWidth={4} /></div>,
+        <div key="4" className="text-red-600">{t("expensive_not_for_sme")}<X className="h-7 w-7 ml-1 inline" strokeWidth={4} /></div>,
       ],
     },
     {
@@ -42,7 +42,7 @@ export default function ComparisonSection() {
         <><div className="text-lg inline font-bold">0€</div> {t("no_hidden_costs")}</>,
         <><X className="h-6 w-6 mr-1 inline text-red-600" strokeWidth={4} /> {t("limited_flexibility")}</>,
         <><X className="h-6 w-6 mr-1 inline text-red-600" strokeWidth={4} /> {t("product_data_must_be_searched")}</>,
-        <div className="text-yellow-600">{t("requires_manual_work")}<TriangleAlert className="h-6 w-6 ml-1 inline" /></div>,
+        <div key="4" className="text-yellow-600">{t("requires_manual_work")}<TriangleAlert className="h-6 w-6 ml-1 inline" /></div>,
       ],
     },
   ];

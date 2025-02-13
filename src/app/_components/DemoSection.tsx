@@ -190,7 +190,7 @@ export default function DemoSection() {
                 href="#demo-2"
                 className={`${
                   currentSection === "section-2" ? "bg-primary" : "bg-white"
-                }  w-4 h-4 mx-4 rounded-full`}
+                } w-4 h-4 mx-4 rounded-full`}
                 style={{ border: "1px solid black" }}
               />
               {/* <Link
