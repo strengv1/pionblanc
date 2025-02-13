@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
           />
         </div>
         <div className="w-full flex text-center self-center justify-center gap-5">
-          <span className="text-5xl ">
+          <span className="text-3xl ">
             5/5
           </span>
           <div className="flex self-center justify-center">
