@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="
       w-full flex gap-4 py-6 px-4 md:px-6
-      border-t bg-border text-muted-foreground justify-between"
+      border-t bg-border text-muted-foreground justify-between lg:justify-around"
     >
       <div className="flex flex-col gap-4">
         <p className="text-xs">
@@ -32,7 +32,7 @@ export default function Footer() {
       
       
 
-      <div className="sm:ml-auto flex flex-col sm:flex-row gap-4 sm:gap-6">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
         {/* <Link className="text-xs hover:underline underline-offset-4" href="#">
           {t("terms_of_service")}
         </Link> */}
