@@ -1,4 +1,4 @@
-import { MailIcon, PhoneCallIcon } from 'lucide-react'
+import { MailIcon, PenLine, PhoneCallIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
 import { useTranslations } from "next-intl";
@@ -11,7 +11,7 @@ export default function ContactUs() {
   const imageClasses = "rounded-full object-contain my-6"
   return (
     <div className="max-w-screen-xl w-full mx-auto my-24 px-4">
-      <div className="flex flex-col gap-6 pt-20 pb-10 lg:pt-32 lg:pb-20 text-left">
+      <div className="flex flex-col gap-6 pt-20 pb-4 lg:pt-32 lg:pb-16 text-left">
         <h1 className="text-xl sm:text-3xl font-bold">
           {t("title")}
         </h1>
@@ -19,7 +19,27 @@ export default function ContactUs() {
           {t("paragraph")}
         </p>
       </div>
+
+      <div className="flex flex-col md:flex-row text-gray-600 italic text-sm">
+        <div className="flex-1 flex flex-col gap-2 pb-10 lg:pb-20 text-left px-5 md:px-15">
+          <PenLine />
+          <p className="">
+            {t("hey")}<br/><br/>
+            {t("exampleMessage1")}
+          </p>
+        </div>
+        <div className="flex-1 flex flex-col gap-2 pb-10 lg:pb-20 text-left px-5 md:px-15">
+          <PenLine />
+          <p className="">
+            {t("hey")}<br/><br/>
+            {t("exampleMessage2_1")}<br/><br/>
+            [{t("exampleMessage2_2")}]<br/><br/>
+            {t("exampleMessage2_3")}
+          </p>
+        </div>
+      </div>
       
+
       <div className="grid grid-cols-1 mx-0 md:mx-40 xl:mx-0 xl:grid-cols-3 gap-4 ">
         <Card className={cardClasses}>
           <div className={commonDivClasses}>
@@ -34,6 +54,25 @@ export default function ContactUs() {
           <Image
             src="/jan.jpg"
             alt="Jan Härkönen"
+            width={80}
+            height={80}
+            className={imageClasses}
+          />
+        </Card>
+
+        <Card className={cardClasses}>
+          <div className={commonDivClasses}>
+            <h1 className="font-bold">Ville Strengell</h1>
+            <p className="flex items-center">
+              <PhoneCallIcon className="mr-2" /><span>+358 50 494 5684</span>
+            </p>
+            <p className="flex items-center">
+              <MailIcon className="mr-2" /> <span>ville.strengell@pionblanc.fi</span>
+            </p>
+          </div>
+          <Image
+            src="/ville.jpg"
+            alt="Ville Strengell"
             width={80}
             height={80}
             className={imageClasses}
@@ -59,24 +98,6 @@ export default function ContactUs() {
           />
         </Card>
 
-        <Card className={cardClasses}>
-          <div className={commonDivClasses}>
-            <h1 className="font-bold">Ville Strengell</h1>
-            <p className="flex items-center">
-              <PhoneCallIcon className="mr-2" /><span>+358 50 494 5684</span>
-            </p>
-            <p className="flex items-center">
-              <MailIcon className="mr-2" /> <span>ville.strengell@pionblanc.fi</span>
-            </p>
-          </div>
-          <Image
-            src="/ville.jpg"
-            alt="Ville Strengell"
-            width={80}
-            height={80}
-            className={imageClasses}
-          />
-        </Card>
       </div>
     </div>
   )

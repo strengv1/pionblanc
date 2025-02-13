@@ -67,7 +67,12 @@
   },
   "ContactUs":{
     "title":"Contact us – we're here to help!",
-    "paragraph": "Feel free to reach out, no strings attached! You can call or email us—we are easy to reach. It's important to us that you get a solution tailored to your needs, and we're happy to discuss how we can support your business."
+    "paragraph": "Feel free to reach out, no strings attached! You can call or email us—we are easy to reach. It's important to us that you get a solution tailored to your needs, and we're happy to discuss how we can support your business.",
+    "hey": "Hi Jan/Ville/Lauri!",
+    "exampleMessage1": "I am ____ and my company is ______. Our quoting process needs more clarity, and I would like to see how your software works in practice. Would it be possible for you to give a short demo or explain how your current customers are using your solution?",
+    "exampleMessage2_1": "I am _____, and my company is ________. We have the following issue, for which I believe a lightweight software solution could be the answer.",
+    "exampleMessage2_2": "A brief description of the issue, e.g., 'Creating quotes takes a lot of time, and searching for product information from various sources leads to errors.'",
+    "exampleMessage2_3": "I would like to hear if Pion Blanc could help us with this. How should we proceed?"
   },
   "FinalHookSection": {
     "title": "Interested?",
