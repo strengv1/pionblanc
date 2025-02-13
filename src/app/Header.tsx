@@ -88,7 +88,7 @@ export default function Header() {
             ref={dropdownRef} // Attach the ref to the main dropdown
             className="absolute top-20 left-0 right-0 bg-secondary text-white shadow-lg py-4 px-4 opacity-95 z-50"
           >
-            <nav className="flex flex-col gap-4">
+            <nav className="flex flex-col gap-4 mb-2 md:mb-0">
               <Link
                 className={`${linkClassName} p-2`}
                 href="/#demo"

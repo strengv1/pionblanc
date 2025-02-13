@@ -29,7 +29,7 @@ export default function About() {
       <div className="max-w-screen-xl py-20 lg:py-32 text-left mx-5 md:mx-20 lg:mx-40
                       flex flex-col gap-6"
       >
-        <h1 className="font-bold text-3xl">{t("title")}</h1>
+        <h1 className="text-xl sm:text-3xl font-bold mb-2">{t("title")}</h1>
         <p className={paragraphClass}>
           {t("paragraph1")}
         </p>
@@ -50,7 +50,7 @@ export default function About() {
       
       <div className="w-full p-5 grid grid-cols-1 md:grid-cols-3 justify-items-center bg-secondary gap-6">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="w-96 md:w-64 lg:w-80 h-80 flex flex-col items-center text-secondary text-center bg-white shadow-lg rounded-lg border-black">
+          <Card key={index} className="w-full md:w-64 lg:w-80 h-80 flex flex-col items-center text-secondary text-center bg-white shadow-lg rounded-lg border-black">
             <div className="w-full h-48 flex items-center justify-center overflow-hidden">
               <Image
                 src={member.image}

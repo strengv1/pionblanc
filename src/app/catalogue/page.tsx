@@ -30,12 +30,12 @@ export default function LogoGrid() {
     <div className="w-full flex flex-col items-center my-24">
       <div className="max-w-screen-xl py-20 lg:py-32 text-left mx-5 md:mx-20 lg:mx-40
                       flex flex-col gap-4">
-        <h1 className="text-3xl font-bold">{t("catalogue")}</h1>
+        <h1 className="text-xl sm:text-3xl font-bold mb-2">{t("catalogue")}</h1>
 
-        <p className="text-xl font-normal text-balance">{t("main_text_bold")}</p>
+        <p className="md:text-md lg:text-lg text-balance">{t("main_text_bold")}</p>
       </div>
       
-      <div className="grid max-w-screen-xl mx-10 grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+      <div className="grid max-w-screen-xl mx-10 grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
         {companies.map((company, index) => (
           <Link key={index} href={company.url} target="_blank" rel="noopener noreferrer">
             <Card className="overflow-hidden hover:shadow-lg hover:scale-105 transition">

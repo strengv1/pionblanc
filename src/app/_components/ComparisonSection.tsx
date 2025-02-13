@@ -49,7 +49,7 @@ export default function ComparisonSection() {
 
   return (
     <section className="w-full mx-auto max-w-screen-xl px-6 xl:px-0 pt-12 md:pt-24 lg:pt-32">
-      <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">{t("title")}</h2>
+      <h2 className="text-3xl sm:text-5xl font-bold tracking-tighter text-center mb-12">{t("title")}</h2>
       <div className="grid gap-4 lg:grid-cols-4 lg:gap-4">
         {cards.map((card, cardIndex) => (
           <Card key={cardIndex} className={`flex flex-col ${cardIndex===0 ? "scale-105 translate-y-2 shadow-xl border-2 border-primary " : ""}`}>

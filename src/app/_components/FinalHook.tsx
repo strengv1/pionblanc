@@ -13,7 +13,7 @@ export default function FinalHookSection() {
     ">
       <div className="flex py-10 md:py-20 md:px-32 rounded-3xl">
         <div className="w-full flex flex-col gap-4 lg:gap-10">
-          <h1 className="text-lg lg:text-3xl font-semibold">
+          <h1 className="text-2xl lg:text-3xl font-semibold">
             {t("title")}
           </h1>
           <Link href="/contact_us" className="text-xl lg:text-2xl border-b-2 border-primary internal-link">
