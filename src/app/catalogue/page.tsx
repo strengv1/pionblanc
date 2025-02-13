@@ -27,15 +27,14 @@ export default function LogoGrid() {
   const t = useTranslations('Catalogue');
 
   return (
-    <div className="w-full flex flex-col items-center my-24">
-      <div className="max-w-screen-xl py-20 lg:py-32 text-left mx-5 md:mx-20 lg:mx-40
-                      flex flex-col gap-4">
-        <h1 className="text-xl sm:text-3xl font-bold mb-2">{t("catalogue")}</h1>
+    <div className="max-w-screen-xl w-full mx-auto my-24 px-4"> {/* w-full flex flex-col items-center my-24 */}
+      <div className="flex flex-col gap-6 pt-20 pb-10 lg:pt-32 lg:pb-20 text-left"> {/* max-w-screen-xl py-20 lg:py-32 text-left mx-5 md:mx-20 lg:mx-40 flex flex-col gap-4 */}
+        <h1 className="text-xl sm:text-3xl font-bold">{t("catalogue")}</h1>
 
         <p className="md:text-md lg:text-lg text-balance">{t("main_text_bold")}</p>
       </div>
       
-      <div className="grid max-w-screen-xl mx-10 grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+      <div className="grid max-w-screen-xl grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
         {companies.map((company, index) => (
           <Link key={index} href={company.url} target="_blank" rel="noopener noreferrer">
             <Card className="overflow-hidden hover:shadow-lg hover:scale-105 transition">
@@ -57,12 +56,11 @@ export default function LogoGrid() {
         ))}
       </div>
 
-      <div className="max-w-screen-xl py-20 lg:py-32 text-left mx-5 md:mx-20 lg:mx-40
-                      flex flex-col gap-4">
-        <h1 className="text-2xl font-bold text-balance">
+      <div className="flex flex-col gap-6 pt-20 pb-10 lg:pt-32 lg:pb-20 text-left">
+        <h1 className="text-xl sm:text-3xl font-bold">
           {t("main_text_normal_start")}
         </h1>
-        <p className="text-xl font-normal text-balance">
+        <p className="md:text-md lg:text-lg text-balance">
           <Link href="/contact_us" className="border-b-2 border-primary internal-link">{t("let_us_know_your_needs")}</Link>
           {t("main_text_normal_end")} 
         </p>

@@ -24,11 +24,14 @@ export default async function RootLayout({
         {/* <link rel="preload" href="/videos/ohjevideo3.mp4" as="video" /> */}
       </head>
       <body className="flex flex-col min-h-screen">
-        <NextIntlClientProvider messages={messages}>
-          <Header />
+        <main className="flex-grow">
+          <NextIntlClientProvider messages={messages}>
+            <Header />
 
-          {children}
-        </NextIntlClientProvider>
+            {children}
+          </NextIntlClientProvider>
+        </main>
+
         <Footer />
       </body>
     </html>

@@ -10,7 +10,7 @@ export default function ComparisonSection() {
       title: "Pion Blanc",
       rows: [
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("from")} <div className="text-lg inline font-bold">150€{t("per_month")}</div></>,
-        <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("efficient_proc")}</>,
+        <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("quick_process")}</>,
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("customizable")}</>,
         <><CheckCircle className="h-4 w-4 mr-1 inline text-green-500" /> {t("integrated_prod_data")}</>,
         <div className="text-green-500">{t("easy_and_efficient")}<CheckCircle className="h-6 w-6 ml-1 inline" /></div>,
