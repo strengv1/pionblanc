@@ -86,12 +86,13 @@
     "title": "Comparison",
     "from": "From",
     "per_month": "/mo",
+    "integration": "cost of integration",
     "quick_process": "Quick process",
     "customizable": "Customizable as needed",
     "integrated_prod_data": "Integrated product data",
     "easy_and_efficient": "Quick and easy",
     "excel_template": "Excel template",
-    "hidden_cost": "(Hidden cost: Time and errors)",
+    "hidden_cost": "– Hidden cost: Time and errors",
     "slow_and_errorprone": "Slow and error-prone process",
     "flexible": "Flexible",
     "product_data_must_be_searched": "Product data must be searched manually",
@@ -103,7 +104,7 @@
     "manual_data_no_integration": "Manual product data, no integration",
     "expensive_not_for_sme": "Expensive and rigid, not suitable for small businesses",
     "free_online_tool": "Free online tool",
-    "no_hidden_costs": "– No hidden costs, limited functionality",
+    "no_hidden_costs": "– No hidden costs",
     "limited_flexibility": "Limited flexibility",
     "requires_manual_work": "Requires manual work"
   }

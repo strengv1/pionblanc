@@ -88,12 +88,13 @@
     "title": "Vertailu",
     "from": "Alk.",
     "per_month": "/kk",
+    "integration": "integrointimaksu",
     "quick_process": "Nopea prosessi",
     "customizable": "Räätälöitävissä tarpeen mukaan",
     "integrated_prod_data": "Integroidut tuotetiedot",
     "easy_and_efficient": "Helppo ja nopea",
     "excel_template": "Excel-pohja",
-    "hidden_cost": "(Piilokustannus: Aika ja virheet)",
+    "hidden_cost": "– Piilokustannus: Aika ja virheet",
     "slow_and_errorprone": "Hidas ja virhealtis",
     "flexible": "Joustava",
     "product_data_must_be_searched": "Tuotetiedot pitää etsiä itse",
@@ -105,7 +106,7 @@
     "manual_data_no_integration": "Manuaaliset tuotetiedot, ei integraatiota",
     "expensive_not_for_sme": "Kallis ja monimutkainen, ei sovellu pienille yrityksille",
     "free_online_tool": "Ilmainen verkkotyökalu",
-    "no_hidden_costs": "– Ei piilokustannuksia, rajallinen toiminnallisuus",
+    "no_hidden_costs": "– Ei piilokustannuksia",
     "limited_flexibility": "Rajallinen joustavuus",
     "requires_manual_work": "Vaatii manuaalista työtä"
   }
