@@ -55,9 +55,9 @@ export default function Header() {
           <Link className={`${linkClassName}`} href="/#demo">
             {t('demo')}
           </Link>
-          <Link className={`${linkClassName}`} href="/catalogue">
+          {/* <Link className={`${linkClassName}`} href="/catalogue">
             {t('catalogue')}
-          </Link>
+          </Link> */}
           <Link className={`${linkClassName}`} href="/contact_us">
             {t('contact')}
           </Link>
@@ -96,13 +96,13 @@ export default function Header() {
               >
                 {t('demo')}
               </Link>
-              <Link
+              {/* <Link
                 className={`${linkClassName} p-2`}
                 href="/catalogue"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t('catalogue')}
-              </Link>
+              </Link> */}
               <Link
                 className={`${linkClassName} p-2`}
                 href="/contact_us"
