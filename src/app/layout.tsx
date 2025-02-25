@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pionblanc.fi"),
   keywords: [
     "Tarjousgeneraattori pienyrityksille",
+    "Tarjoustyökalu pienyrityksille",
     "Tarjonnan automaatiotyökalu",
     "Tarjousten automatisointi",
     "Tarjousten luontiohjelma",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     "Jan Härkönen",
     "Lauri Vaara"
   ],
-  title: "Pion Blanc Oy | Tarjousgeneraattori pienyrityksille | Automatisoi tarjoukset ja tilaukset",
+  title: "Pion Blanc Oy | Tarjoustyökalu pienyrityksille",
   description: "Tutustu Pion Blancin tarjousgeneraattoriin – mukautettu ohjelmistoratkaisu, joka automatisoi tarjousten luomisen, integroi toimittajatiedot ja nopeuttaa tilausvahvistuksia pienyrityksille. Säästä aikaa ja kasvata liiketoimintaasi helposti käytettävällä alustallamme.",
 
   // openGraph: {
