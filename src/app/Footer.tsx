@@ -18,11 +18,11 @@ export default function Footer() {
           <span>+358 50 46 46 745</span>
           <span>jan.harkonen@pionblanc.fi</span>
         </div>
-        <div className="flex flex-col text-xs ">
+        {/* <div className="flex flex-col text-xs ">
           <span>Lauri Vaara</span>
           <span>+358 50 553 7079</span>
           <span>lauri.vaara@pionblanc.fi</span>
-        </div>
+        </div> */}
         <div className="flex flex-col text-xs ">
           <span>Ville Strengell</span>
           <span>+358 50 494 5684</span>
