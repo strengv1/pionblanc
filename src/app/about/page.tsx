@@ -11,11 +11,11 @@ export default function About() {
       quote: t("QuoteJan"), //Driven by simplicity and efficiency
       image: "/jan.jpg"
     },
-    {
-      name: "Lauri",
-      quote: t("QuoteLauri"), // Code, coffee, and creativity
-      image: "/lauri.png"
-    },
+    // {
+    //   name: "Lauri",
+    //   quote: t("QuoteLauri"), // Code, coffee, and creativity
+    //   image: "/lauri.png"
+    // },
     {
       name: "Ville",
       quote: t("QuoteVille"),

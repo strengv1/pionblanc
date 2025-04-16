@@ -38,7 +38,7 @@ export default function ContactUs() {
           />
         </Card>
 
-        <Card className={cardClasses}>
+        {/* <Card className={cardClasses}>
           <div className={commonDivClasses}>
             <h1 className="font-bold">Lauri Vaara</h1>
             <p className="flex items-center">
@@ -55,7 +55,7 @@ export default function ContactUs() {
             height={80}
             className={imageClasses}
           />
-        </Card>
+        </Card> */}
 
         <Card className={cardClasses}>
           <div className={commonDivClasses}>
