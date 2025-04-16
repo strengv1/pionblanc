@@ -57,6 +57,26 @@ html{
   z-index: -1;
 }
 
+.comparison-section{
+  position: relative;
+  color: white;
+  overflow-x: clip;
+
+}
+.comparison-section::after {
+
+  content: '';
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  top: 0;
+  bottom: 0;
+  background: hsl(var(--secondary));
+  z-index: -1;
+}
+
+
+
 .internal-link {
   background-color: transparent;
   border-bottom: 2px solid hsl(var(--primary));

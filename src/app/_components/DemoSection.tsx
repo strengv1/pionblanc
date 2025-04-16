@@ -63,7 +63,7 @@ export default function DemoSection() {
   return (
     <section id="demo" className="demo-section min-h-screen pt-36 lg:pt-40">
       <div className="text-center -mb-20">
-        <h1 className="text-xl lg:text-3xl font-semibold">
+        <h1 className="text-3xl sm:text-5xl font-bold tracking-tighter text-center">
           {t("title")}
         </h1>
       </div>
@@ -190,7 +190,7 @@ export default function DemoSection() {
                 href="#demo-2"
                 className={`${
                   currentSection === "section-2" ? "bg-primary" : "bg-white"
-                }  w-4 h-4 mx-4 rounded-full`}
+                } w-4 h-4 mx-4 rounded-full`}
                 style={{ border: "1px solid black" }}
               />
               {/* <Link

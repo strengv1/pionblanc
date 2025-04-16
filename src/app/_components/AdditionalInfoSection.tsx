@@ -97,17 +97,17 @@ export default function AdditionalInfoSection() {
             {t("paragraph1")}
           </p>
           <p className="text-md lg:text-2xl md:text-balance">
-            {t("paragraph2Start")} 
-            <Link href="/catalogue" className="border-b-2 border-primary internal-link">{t("our_catalogue")}</Link>
-            {t("paragraph2Middle")} 
-            <Link href="/contact_us" className="border-b-2 border-primary internal-link">{t("few_clicks_away")}</Link>
-            {t("paragraph2End")} 
+            {/* {t("paragraph2Start")}  */}
+            {/* <Link href="/catalogue" className="border-b-2 border-primary internal-link">{t("our_catalogue")}</Link> */}
+            {/* {t("paragraph2Middle")}  */}
+            {/* <Link href="/contact_us" className="border-b-2 border-primary internal-link">{t("few_clicks_away")}</Link> */}
+            {/* {t("paragraph2End")}  */}
           </p>
         </div>
         <div className="w-full relative h-[280px] md:h-[350px] lg:h-[400px] flex items-center justify-center text-center mt-4 lg:mt-0">
           <Image
             src="/tuotedataa.png"
-            alt=""
+            alt="tuotedata.png"
             className="object-contain"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

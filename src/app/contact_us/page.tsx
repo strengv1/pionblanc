@@ -1,4 +1,4 @@
-import { MailIcon, PhoneCallIcon } from 'lucide-react'
+import { MailIcon, PenLine, PhoneCallIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import Image from 'next/image'
 import { useTranslations } from "next-intl";
@@ -6,19 +6,41 @@ import { useTranslations } from "next-intl";
 export default function ContactUs() {
   const t = useTranslations('ContactUs');
 
-  const cardClasses = "flex justify-around mt-12 py-4 px-5"
-  const commonDivClasses ="flex flex-col gap-3 md:text-md lg:text-lg text-left text-balance justify-center"
+  const cardClasses = "flex flex-col py-2 xs:flex-row items-center justify-around"
+  const commonDivClasses = "flex flex-col gap-3 md:text-md lg:text-lg text-left text-balance"
   const imageClasses = "rounded-full object-contain my-6"
   return (
-    <div className="max-w-screen-md w-full mx-auto my-24 px-4 flex-1">
-      <div className="py-20 lg:py-32 text-left">
-        <h1 className="text-3xl font-bold mb-2">
+    <div className="max-w-screen-xl w-full mx-auto my-24 px-4">
+      <div className="flex flex-col gap-6 pt-20 pb-4 lg:pt-32 lg:pb-16 text-left">
+        <h1 className="text-xl sm:text-3xl font-bold">
           {t("title")}
         </h1>
-        <p className="md:text-md lg:text-lg text-left text-balance">
+        <p className="md:text-md lg:text-lg text-balance">
           {t("paragraph")}
         </p>
-        
+      </div>
+
+      <div className="flex flex-col md:flex-row text-gray-600 italic text-sm">
+        <div className="flex-1 flex flex-col gap-2 pb-10 lg:pb-20 text-left px-5 md:px-15">
+          <PenLine />
+          <p className="">
+            {t("hey")}<br/><br/>
+            {t("exampleMessage1")}
+          </p>
+        </div>
+        <div className="flex-1 flex flex-col gap-2 pb-10 lg:pb-20 text-left px-5 md:px-15">
+          <PenLine />
+          <p className="">
+            {t("hey")}<br/><br/>
+            {t("exampleMessage2_1")}<br/><br/>
+            [{t("exampleMessage2_2")}]<br/><br/>
+            {t("exampleMessage2_3")}
+          </p>
+        </div>
+      </div>
+      
+
+      <div className="grid grid-cols-1 mx-0 md:mx-40 xl:mx-0 xl:grid-cols-3 gap-4 ">
         <Card className={cardClasses}>
           <div className={commonDivClasses}>
             <h1 className="font-bold">Jan Härkönen (CEO)</h1>
@@ -31,7 +53,7 @@ export default function ContactUs() {
           </div>
           <Image
             src="/jan.jpg"
-            alt=""
+            alt="Jan Härkönen"
             width={80}
             height={80}
             className={imageClasses}
@@ -50,13 +72,13 @@ export default function ContactUs() {
           </div>
           <Image
             src="/lauri.png"
-            alt=""
+            alt="Lauri Vaara"
             width={80}
             height={80}
             className={imageClasses}
           />
         </Card> */}
-
+        
         <Card className={cardClasses}>
           <div className={commonDivClasses}>
             <h1 className="font-bold">Ville Strengell</h1>
@@ -69,7 +91,7 @@ export default function ContactUs() {
           </div>
           <Image
             src="/ville.jpg"
-            alt=""
+            alt="Ville Strengell"
             width={80}
             height={80}
             className={imageClasses}

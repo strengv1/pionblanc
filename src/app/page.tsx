@@ -1,20 +1,15 @@
-"use client"
-
 import "../styles/frontpage.css"
 import AdditionalInfoSection from "./_components/AdditionalInfoSection"
 import ComparisonSection from "./_components/ComparisonSection"
 import DemoSection from "./_components/DemoSection"
 import FinalHook from "./_components/FinalHook"
 import HeroSection from "./_components/HeroSection"
-// import PricingSection from "./_components/PricingSection"
 import TestimonialsSection from "./_components/TestimonialsSection"
 
-export default function LandingPage() {
+const LandingPage = () => {
   return (
     <div>
       <main className="flex-1 mb-9">
-
-        {/* Hero Section */}
         <HeroSection />
         <AdditionalInfoSection />
         <div className="overflow-x-clip">
@@ -23,8 +18,9 @@ export default function LandingPage() {
         <DemoSection />
         <ComparisonSection />
         <FinalHook />
-        {/* <PricingSection /> */}
       </main>
     </div>
-  )
-}
+  );
+};
+
+export default LandingPage;

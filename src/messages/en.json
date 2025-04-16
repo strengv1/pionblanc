@@ -61,13 +61,18 @@
     "paragraph3": "Currently, our service includes product data from around 20 bathroom interior suppliers, allowing businesses to access and use product information much more efficiently.",
     "paragraph4": "However, we are much more than just the developers of an offer generator. Unlike large software companies whose products aim to serve the broadest possible customer base, we focus on tailored solutions designed specifically for your needs – and at a more affordable price. As a small and agile team, we can offer fast and flexible development without unnecessary overhead costs.",
     "paragraph5": "Web technologies are our specialty, and we are happy to help our clients with new software projects and website solutions. If you have an idea or a need for a digital tool, we'd love to discuss it with you!",
-    "QuoteJan": "I don't know how Ville does all this, but I don't question genius.",
-    "QuoteLauri": "If I had one wish, it would be the programming skills of Ville.",
-    "QuoteVille": "If this website works perfectly, that's on me. If not… let's blame Jan."
+    "QuoteJan": "Good software feels effortless. That’s what we aim for.",
+    "QuoteLauri": "We turn complex problems into simple solutions.",
+    "QuoteVille": "Every business is unique – that’s why we create flexible solutions."
   },
   "ContactUs":{
     "title":"Contact us – we're here to help!",
-    "paragraph": "Feel free to reach out, no strings attached! You can call or email us—we are easy to reach. It's important to us that you get a solution tailored to your needs, and we're happy to discuss how we can support your business."
+    "paragraph": "Feel free to reach out, no strings attached! You can call or email us—we are easy to reach. It's important to us that you get a solution tailored to your needs, and we're happy to discuss how we can support your business.",
+    "hey": "Hi Jan/Ville/Lauri!",
+    "exampleMessage1": "I am ____ and my company is ______. Our quoting process needs more clarity, and I would like to see how your software works in practice. Would it be possible for you to give a short demo or explain how your current customers are using your solution?",
+    "exampleMessage2_1": "I am _____, and my company is ________. We have the following issue, for which I believe a lightweight software solution could be the answer.",
+    "exampleMessage2_2": "A brief description of the issue, e.g., 'Creating quotes takes a lot of time, and searching for product information from various sources leads to errors.'",
+    "exampleMessage2_3": "I would like to hear if Pion Blanc could help us with this. How should we proceed?"
   },
   "FinalHookSection": {
     "title": "Interested?",
@@ -81,12 +86,13 @@
     "title": "Comparison",
     "from": "From",
     "per_month": "/mo",
-    "efficient_proc": "Efficient process",
+    "integration": "cost of integration",
+    "quick_process": "Quick process",
     "customizable": "Customizable as needed",
     "integrated_prod_data": "Integrated product data",
-    "easy_and_efficient": "Easy and efficient",
+    "easy_and_efficient": "Quick and easy",
     "excel_template": "Excel template",
-    "hidden_cost": "(Hidden cost: Time and errors)",
+    "hidden_cost": "– Hidden cost: Time and errors",
     "slow_and_errorprone": "Slow and error-prone process",
     "flexible": "Flexible",
     "product_data_must_be_searched": "Product data must be searched manually",
@@ -98,7 +104,7 @@
     "manual_data_no_integration": "Manual product data, no integration",
     "expensive_not_for_sme": "Expensive and rigid, not suitable for small businesses",
     "free_online_tool": "Free online tool",
-    "no_hidden_costs": "– No hidden costs, limited functionality",
+    "no_hidden_costs": "– No hidden costs",
     "limited_flexibility": "Limited flexibility",
     "requires_manual_work": "Requires manual work"
   }
