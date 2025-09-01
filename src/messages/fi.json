@@ -69,7 +69,7 @@
   "ContactUs":{
     "title":"Ota yhteyttä – olemme täällä auttamassa!",
     "paragraph": "Yhteydenotto ei maksa mitään! Voit soittaa tai lähettää sähköpostia, olemme nopeasti tavoitettavissa. Meille on tärkeää, että saat juuri sinun tarpeisiisi räätälöidyn ratkaisun, ja keskustelemme mielellämme, miten voimme tukea liiketoimintaasi.",
-    "hey": "Hei Jan/Ville/Lauri!",
+    "hey": "Hei Jan!",
     "exampleMessage1": "Olen ____ ja yritykseni on ______. Tarjousprosessimme kaipaa selkeyttämistä, ja haluaisin nähdä, miten ohjelmistonne toimii käytännössä. Onko teillä mahdollisuutta näyttää lyhyt demo tai kertoa, miten nykyiset asiakkaanne hyödyntävät ratkaisuanne?",
     "exampleMessage2_1": "Olen _____, ja yritykseni on ________. Meillä on seuraavanlainen ongelma, johon uskoisin löytyvän ratkaisun kevyellä ohjelmistolla:",
     "exampleMessage2_2": "Lyhyt kuvaus ongelmasta, esim. “Tarjousten tekeminen vie paljon aikaa, ja tuotetietojen etsiminen eri lähteistä aiheuttaa virheitä.“",

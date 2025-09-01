@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     "Pienyritysohjelmistoratkaisut",
     "Kotisivut",
     "Nettisivut",
-    "Ville Strengell",
+    // "Ville Strengell",
     "Jan Härkönen",
-    "Lauri Vaara"
+    // "Lauri Vaara"
   ],
   title: "Pion Blanc Oy | Tarjoustyökalu pienyrityksille",
   description: "Tutustu Pion Blancin tarjousgeneraattoriin – mukautettu ohjelmistoratkaisu, joka automatisoi tarjousten luomisen, integroi toimittajatiedot ja nopeuttaa tilausvahvistuksia pienyrityksille. Säästä aikaa ja kasvata liiketoimintaasi helposti käytettävällä alustallamme.",

@@ -16,11 +16,11 @@ export default function About() {
     //   quote: t("QuoteLauri"), // Code, coffee, and creativity
     //   image: "/lauri.png"
     // },
-    {
-      name: "Ville",
-      quote: t("QuoteVille"),
-      image: "/ville.jpg"
-    }
+    // {
+    //   name: "Ville",
+    //   quote: t("QuoteVille"),
+    //   image: "/ville.jpg"
+    // }
   ];
 
   const paragraphClass = "md:text-md lg:text-lg text-balance";
